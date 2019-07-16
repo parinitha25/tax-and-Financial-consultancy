@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logot from '../logot.svg';
 import '../App.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Form,Button, NavDropdown } from 'react-bootstrap';
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from "mdbreact";
 import {Card,CardImg, CardTitle, CardText, CardGroup, CardBody} from 'reactstrap';
 
@@ -91,6 +91,26 @@ class Home extends Component {
           <input type="submit" value="Make An Appointment" className="apt"></input>
         </div>
         <h2 className="service">Tax Calculator</h2>
+        <Form>
+  <Form.Group>
+    <label><b>Choose your Business Area</b></label><br/>
+    <input type="text"  className="c" />
+  </Form.Group>
+
+  <Form.Group>
+    <label><b>Employees number</b></label><br/>
+    <input type="text"  />
+  </Form.Group>
+  <Form.Group>
+    <label><b>Country of residence</b></label><br/>
+    <input type="text"  />
+  </Form.Group>
+  <Form.Group>
+    <label><b>Yearly Income</b></label><br/>
+    <input type="text"  />
+  </Form.Group>
+  <Button variant="primary" type="submit">Total payment </Button>
+</Form>
       </div>
     );
   }
