@@ -117,8 +117,8 @@ class Home extends Component {
         </Form.Group>
         <Form.Group>
           <label><b>Employees number</b></label><br/>
-        <Form as="select">
-        <option>1</option>
+      <Form as="select">
+      <option>1</option>
       <option>2</option>
       <option>3</option>
     </Form>
