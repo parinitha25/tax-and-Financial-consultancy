@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './CSS/About.css';
+import benifits from '../images/benifits.jpg';
 
 class About extends Component {
   render() {
@@ -31,7 +32,7 @@ class About extends Component {
         </div>
         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 backgroundb">
+          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
           <img  src={require('../images/benifits.jpg')} alt="Card image" className="bimg" />
           </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
@@ -58,3 +59,4 @@ class About extends Component {
 }
 
 export default About;
+{/* <img src={logo} alt={"logo"} className='logo'></img> */}
