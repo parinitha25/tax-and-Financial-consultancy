@@ -4,7 +4,7 @@ import './CSS/Home.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Form,Button, NavDropdown } from 'react-bootstrap';
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from "mdbreact";
-import {Card,CardImg, CardTitle, CardText, CardGroup, CardBody} from 'reactstrap';
+import {Card, CardGroup, CardBody} from 'reactstrap';
 
 class Home extends Component {
   render() {
@@ -15,13 +15,13 @@ class Home extends Component {
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
-        <a class="nav-link " href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link " href="./home">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="./about">About Us</a>
             </li>
             <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="./service">Services</a>
             </li>
             <li class="nav-item">
                 <NavDropdown title="Pages" id="basic-nav-dropdown">
@@ -31,7 +31,7 @@ class Home extends Component {
                 </NavDropdown>
             </li>
             <li class="nav-item">
-        <a class="nav-link" href="#">ContactUs</a>
+        <a class="nav-link" href="./contact">ContactUs</a>
             </li>
             </ul>
         </div>
@@ -106,46 +106,45 @@ class Home extends Component {
       <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
       <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
         <h2 className="service">Tax Calculator</h2>
-        <Form className="mtop">
-          <Form.Group>
+      <Form className="mtop">
+        <Form.Group>
           <label><b>Choose your Business Area</b></label><br/>
         <Form as="select">
           <option>Ahmedabad</option>
           <option>Busan	</option>
           <option>Hiroshima</option>
         </Form>
+          </Form.Group>
+          <Form.Group>
+          <label><b>Employees number</b></label><br/>
+        <Form as="select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </Form>
         </Form.Group>
         <Form.Group>
-          <label><b>Employees number</b></label><br/>
-      <Form as="select">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-    </Form>
-  </Form.Group>
-  <Form.Group>
-    <label><b>Country of residence</b></label><br/>
-    <Form as="select">
-      <option>India</option>
-      <option>South Korea</option>
-      <option>Japan</option>
-    </Form>
-  </Form.Group>
-  <Form.Group>
-    <label><b>Yearly Income</b></label><br/>
-    <input type="text"  />
-  </Form.Group>
-  <Button variant="primary" type="submit">Total payment </Button>
-</Form>
-</div>
-<div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-<img src={require('../images/calculator.jpg')} className="imgc" alt="calculator" />
-</div>
-<div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
-</div>
-<h2 className="service">Latest News</h2>
-<CardGroup>
-
+          <label><b>Country of residence</b></label><br/>
+        <Form as="select">
+          <option>India</option>
+          <option>South Korea</option>
+          <option>Japan</option>
+        </Form>
+        </Form.Group>
+        <Form.Group>
+          <label><b>Yearly Income</b></label><br/>
+          <input type="text"  />
+        </Form.Group>
+        <Button variant="primary" type="submit">Total payment </Button>
+      </Form>
+          </div>
+          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
+          <img src={require('../images/calculator.jpg')} className="imgc" alt="calculator" />
+          </div>
+          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
+          </div>
+          <h2 className="service">Latest News</h2>
+      <CardGroup>
         <Card>
           <CardBody>
             <img src={require('../images/tax.jpg')} alt="Card image" className="timg" />

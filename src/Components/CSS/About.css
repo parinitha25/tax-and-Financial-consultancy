@@ -2,8 +2,6 @@
     background-image: url('../../images/consulatancy.jpg');
     height: 300px;
     width:100%;
-    /* margin-left: 50px;
-    margin-right: 50px; */
     background-size: cover;
 }
 .abouta{
@@ -42,14 +40,49 @@
     height: 300px;
 }
 .bimg{
-    /* margin-top: 100px; */
-    margin-left: 100px;
+    margin-top: 200px;
+    width:100%;
 }
 .backgroundb{
     background-image: url('../../images/consulatancy.jpg');
     height: 300px;
     width:100%;
-    /* margin-left: 50px;
-    margin-right: 50px; */
+    margin-top:900px;
     background-size: cover;
+}
+.benifit{
+    margin-left: 350px;
+    margin-top:-618px;
+    margin-right: 100px;
+    background-color:#7470b2;
+    margin-bottom: 300px;
+}
+.benifita{
+   color: #e23cd4;
+  
+}
+.p1{
+    margin-left: 300px;
+    text-align: left;
+    margin-top: 20px;
+}
+.paragraph{
+    margin-top:50px;
+    margin-left: 30px;
+    color: #e23cd4;
+}
+.tmimg{
+    width: 200px;
+    height: 200px;
+}
+/* .tmimg:hover{
+  
+} */
+/* .cardimg{
+    margin-top: 100px;
+} */
+.teamc{
+    margin-top:40px;
+    margin-left: 30px;
+    color: #e23cd4;
 }

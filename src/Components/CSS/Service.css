@@ -1,0 +1,59 @@
+.backgrounds{
+    background-image: url('../../images/service.jpg');
+    height: 600px;
+    width:100%;
+    background-size: cover;
+}
+.expert{
+    margin-top: 150px;
+    margin-left: 30px;
+    color: #e23cd4
+}
+.expertimg{
+    margin-top: 150px;
+    width: 500px;
+    height: 300px;
+    /* margin-left: 800px; */
+}
+.reade{
+    position: absolute; 
+    top: 420px; 
+    left: 150px; 
+    height: 50px;
+    border:none;
+    border-radius: 20px;
+    background-color: #7470b2;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    color: aqua;
+}
+.logoi{
+    width: 150px;
+    height: 100px;
+    margin-top: 50px;
+}
+.logop{
+    color: #e23cd4;
+    margin-top:30px;
+    font-size: 20px;
+}
+.ausp{
+    margin-top:40px;
+}
+.servp{
+    text-align: left;
+    margin-left: 100px;
+    margin-top:20px;
+}
+.servph{
+    margin-top: 20px;
+   text-align: left;
+   margin-left: 100px;
+}
+.taxus{
+    margin-top: 100px;
+    margin-left: 30px;
+    color: #e23cd4
+}
