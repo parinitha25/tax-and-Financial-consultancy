@@ -48,27 +48,27 @@ class Home extends Component {
           <MDBView>
             <img className="d-block w-60 imga" src={require('../images/financial.jpg')} alt="First slide" />
             <h4 className="font">Our capital markets team, helping clients identify and invest in opportunities across all markets and asset classes.</h4><br />
-            <input type="submit" value="Make An Appointment" className="make"></input>
+            <input type="submit" value="Make An Appointment" className="makes"></input>
           </MDBView>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="2">
           <MDBView>
             <img className="d-block w-60 imga" src={require('../images/download1.jpg')} alt="Second slide" />
             <h4 className="font">Our capital markets team, helping clients identify and invest in opportunities across all markets and asset classes.</h4><br />
-            <input type="submit" value="Make An Appointment" className="make"></input>
+            <input type="submit" value="Make An Appointment" className="makes"></input>
           </MDBView>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3">
           <MDBView>
             <img className="d-block w-60 imga" src={require('../images/download4.jpeg')} alt="Third slide"/>
             <h4 className="font">Our capital markets team, helping clients identify and invest in opportunities across all markets and asset classes.</h4><br />
-            <a href='./appt'> <input type="submit" value="Make An Appointment" className="make"></input></a>
+            <a href='./appt'> <input type="submit" value="Make An Appointment" className="makes"></input></a>
           </MDBView>
         </MDBCarouselItem>
         </MDBCarouselInner>
         </MDBCarousel>
       </MDBContainer>
-      <h2 className="service">Our Services</h2>
+      <h2 className="serviceo">Our Services</h2>
       <CardGroup>
         <Card>
           <CardBody>
@@ -87,63 +87,76 @@ class Home extends Component {
         </Card>
       </CardGroup>
       <div className="row">
-      <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-      <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-        <div className="background">
-       
+        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
           <div className="about">
-            <h2 className="aboutb">About US</h2>
-            <p>As the pace of innovation accelerates in a hyper—competitive environment, success depends on putting customers at the center of everything a business does. 
-              That's why RRD's mission is to enable our clients to better connect with their customers.No other organization gives clients the means to connect to their customers across the entire breadth of the customer journey, from marketing programs 
-              that generate new customers to the critical business operations that serve and extend the brand. </p>
-         <a href='./appt'><input type="submit" value="Make An Appointment" className="apt"></input>  </a>
-        </div>
+				    <div className="aboutt">
+				    	<span className="aboutus"><i>About US</i></span>
+						    <p>As the pace of innovation accelerates in a hyper competitive environment, success depends on putting customers at the center of everything a business does.</p>
+                <p className="aboutp"> 1.Conducting research on tax laws<br/>
+                  2.Strategizing with clients to minimize tax liability<br/>
+                  3.Communicating with clients to explain tax issues<br/>
+                  4.Preparing tax returns<br/>
+                  5.Estate planning<br/>
+                  6.Keeping clients compliant with their tax obligations  
+						    </p>
+					    <a href='./appt'><input type="submit" value="Make An Appointment" className="aptb"></input>  </a>
+				    </div>
+			    </div>
         </div>
       </div>
-      </div>
-
       <div className="row">
-      <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
-      <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
+        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
+        <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
         <h2 className="service">Tax Calculator</h2>
-      <Form className="mtop">
-        <Form.Group>
-          <label><b>Choose your Business Area</b></label><br/>
-        <Form as="select">
-          <option>Ahmedabad</option>
-          <option>Busan	</option>
-          <option>Hiroshima</option>
-        </Form>
+      <div className="row">
+        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
+        <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
+        <Form className="mtop">
+          <Form.Group>
+            <label><b>Choose your Business Area</b></label><br/>
+            <Form as="select">
+              <option>Ahmedabad</option>
+              <option>Busan	</option>
+              <option>Hiroshima</option>
+            </Form>
           </Form.Group>
           <Form.Group>
-          <label><b>Employees number</b></label><br/>
-        <Form as="select">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
+            <label><b>Employees number</b></label><br/>
+            <Form as="select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </Form>
+          </Form.Group>
         </Form>
-        </Form.Group>
-        <Form.Group>
-          <label><b>Country of residence</b></label><br/>
-        <Form as="select">
-          <option>India</option>
-          <option>South Korea</option>
-          <option>Japan</option>
-        </Form>
-        </Form.Group>
-        <Form.Group>
-          <label><b>Yearly Income</b></label><br/>
-          <input type="text"  />
-        </Form.Group>
-        <Button variant="primary" type="submit">Total payment </Button>
-      </Form>
-          </div>
+        </div>
+        <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
+        <Form>
+          <Form.Group>
+            <label className="formc"><b>Country of residence</b></label><br/>
+            <Form as="select">
+              <option>India</option>
+              <option>South Korea</option>
+              <option>Japan</option>
+            </Form>
+          </Form.Group>
+          <Form.Group>
+              <label><b>Yearly Income</b></label><br/>
+              <input type="text"  />
+          </Form.Group>
+              <Button variant="primary" type="submit" className="tbutton">Total payment </Button>
+          </Form>
+        </div>
+        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+        </div>
           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-          <img src={require('../images/calculator.jpg')} className="imgc" alt="calculator" />
+            <img src={require('../images/calculator.jpg')} className="imgc" alt="calculator" />
           </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
-          </div>
-          <h2 className="service">Latest News</h2>
+      </div>
+          <h2 className="serviceo">Latest News</h2>
       <CardGroup>
         <Card>
           <CardBody>
@@ -161,6 +174,9 @@ class Home extends Component {
           </CardBody>
         </Card>
       </CardGroup>
+      {/* </div> */}
+      // <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
+     
       </div>
     );
   }

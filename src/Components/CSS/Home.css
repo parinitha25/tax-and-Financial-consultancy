@@ -64,18 +64,17 @@
     margin-right: 400px;
     left: 0; 
   }
-  .make 
+  .makes 
   {
     position: absolute; 
     background-color:black;
+    border-color:white;
+    border-radius: 0px;
     top: 350px; 
     left: 250px; 
-      height: 50px;
-      border:none;
-      border-radius: 50px;
-      background-color: #7470b2;
-      font-weight: bold;
-      color: white;
+    height: 50px;
+    font-weight: bold;
+    color:#4c3ce2;
   }
   .style{
      font-size:20px;
@@ -90,7 +89,11 @@
   }
   .service{
     color:purple;
-    margin-top: 90px;
+    margin-top: -30px;
+  }
+  .serviceo{
+    color:purple;
+    margin-top: 100px;
   }
   .cimg{
    width: 300px;
@@ -110,38 +113,56 @@
   .imgc{
       width: 500px;
       height: 400px;
-      margin-top: 100px;
+      margin-top: -30px;
   }
-  .background{
-      background-image: url('../../images/hero-company.jpg');
-      height: 500px;
-      width:90%;
-      margin-left: 70px;
-      margin-right: 100px;
-      margin-top: 100px;
-      background-size: cover;
+  .formc{
+    margin-top: 50px;
   }
   .about{
-      margin-left: 450px;
-      margin-top:200px;
-      margin-right: 100px;
-      background-color:#7470b2;
+    height: 800px;
+    background-image: url("../../images/hero-company.jpg");
+    width: 1070px;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-right:100px;
   }
-  .aboutb{
-      margin-top: 200px;
+  .aboutp{
+    text-align: left;
+    margin-left: 40px;
+  }  
+  .aboutt{
+    position: absolute;
+    margin-top: 70px;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    left: 560px;
+    right: 350px;
+    height: 500px;
+    width: 550px;
+    font-size: 1.1rem;
+    background-color: #e81050;
+    margin-bottom: 1.5rem;
   }
-  .apt{
+  .tbutton{
+    margin-left: -200px;
+  }
+ .aboutus{
+   font-size: 50px;
+   color: #61dafb
+ }
+  .aptb{
     position: absolute; 
     background-color:black;
-    top: 100px; 
-    left: 750px; 
+    /* border-color:green; */
+    border-radius: 0px;
+    /* top: 100px;  */
+    left: 170px; 
     height: 50px;
-    border:none;
-    border-radius: 50px;
-    background-color: #7470b2;
     font-weight: bold;
-    color: white;
+    color:#4c3ce2;
   }
+  
   .timg{
     width: 300px;
     height: 300px;
