@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import './CSS/About.css';
-
-import {Card,CardImg, CardTitle, CardText, CardGroup, CardBody} from 'reactstrap';
+import {Card, CardGroup, CardBody} from 'reactstrap';
+import Navbar from './Navbar';
 
 class About extends Component {
   render() {
     return (
       <div>
+        <Navbar/>
         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <div className="backgrounda"></div>
-            <div className="abouta">About US</div>
           </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
@@ -66,27 +66,59 @@ class About extends Component {
         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <h1 className="teamc"><i>Team of consultancy</i></h1>
-        <CardGroup className="cardimg">
+          <h1 className="teamc"><i>Our Team</i></h1>
+        <CardGroup className="cardimgt">
         <Card>
           <CardBody>
-            <img src={require('../images/team1.jpg')} alt="Card image" className="tmimg" />
-            <p className="p">Email</p>
+          <div class="dropdown">
+            <img src={require('../images/expert3.jpg')} alt="Card image" className="tmimg" />
+            <p>Ross McEwan</p>
+            <p>CEO</p>
+            <div class="dropdown-content">
+              <center><label className="labeln">rossmen12@gmail.com</label></center>
+              <p> 08048921603</p>
+              {/* <img src={require('../images/email1.png')} alt="Card image" className="emaili" /> */}
+            </div>
+          </div>
           </CardBody>
         </Card>
         <Card>     
           <CardBody>
-            <img  src={require('../images/team2.jpg')} alt="Card image" className="tmimg" />
+          <div class="dropdown">
+            <img  src={require('../images/expert4.jpg')} alt="Card image" className="tmimg" />
+            <p>Sarah Danckert</p>
+            <p>Business Reporter.</p>
+            <div class="dropdown-content">
+              <center><label className="labeln">sarah345@gmail.com</label></center>
+              <p> 0804567891</p>
+            </div>
+          </div>
           </CardBody>
         </Card>
         <Card>
           <CardBody>
-            <img  src={require('../images/team3.jpg')} alt="Card image"  className="tmimg"/>
+          <div class="dropdown">
+            <img  src={require('../images/expert2.jpg')} alt="Card image"  className="tmimg"/>
+            <p>	Kumar Birla</p>
+            <p>Advisor</p>
+            <div class="dropdown-content">
+              <center><label className="labeln">kumar789@gmail.com</label></center>
+              <p> 0947393027</p>
+            </div>
+          </div>
           </CardBody>
         </Card>
         <Card>
           <CardBody>
-            <img  src={require('../images/team4.jpg')} alt="Card image"  className="tmimg"/>
+          <div class="dropdown">
+            <img  src={require('../images/expert1.png')} alt="Card image"  className="tmimg"/>
+            <p>Jeff Bezos</p>
+            <p>Manager</p>
+            <div class="dropdown-content">
+              <center><label className="labeln">jeff456@gmail.com</label></center>
+              <p> 0354830922</p>
+            </div>
+          </div>
           </CardBody>
         </Card>
       </CardGroup>
@@ -98,3 +130,10 @@ class About extends Component {
 }
 
 export default About;
+
+// <div class="dropdown">
+//                 <img className="pic1" src={require('../Image/pic1.jpg')} alt="no image"></img>
+//                 <div class="dropdown-content">
+//                   <center><label>Veg Fired Rice</label></center>
+//                 </div>
+//               </div>

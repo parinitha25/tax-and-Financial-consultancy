@@ -12,38 +12,40 @@
 .phoneimg{
     width: 50px;
     height: 50px;
-    margin-top: 70px;
-    margin-left: 250px;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 .cparagraph{
-  margin-left: -14px;
+  margin-left: -30px;
 }
 .cparagrapha{
-  margin-left: -308px;
+  margin-left: -70px;
 }
 .phoneimga{
     width: 50px;
     height: 50px;
-    margin-top: 120px;
-    margin-left: 250px;
+    margin-top: 100px;
+    margin-left: 10px;
 }
 .number{
-    margin-left: -130px;
-    margin-top: 90px;
+    margin-left: -40px;
+    margin-top: 60px;
 }
 .numbera{
-    margin-left: -130px;
+    margin-left: -40px;
     margin-top: 130px;
 }
 .custp{
     margin-top:30px;
     text-align: left;
-    /* margin-left: 100px; */
+   
 }
 .custpa{
   margin-top:30px;
   text-align: left;
-  margin-left: 100px;
+  margin-left: 200px;
+  color: #e2473c;
+  font-size: 30px;
 }
 .taxfind{
     margin-top: 50px;
@@ -62,6 +64,7 @@
 .addrp{
 margin-left: 100px;
 text-align: left;
+margin-right: 900px;
 }
 .country{
   font-size: 40px; 
@@ -70,15 +73,28 @@ text-align: left;
   color:#8a5dd3;
 }
 .form{
-  margin-top:100px;
-  font-size: 40px;
-  color: #e23cd4;
+  margin-top:120px;
+  font-size: 30px;
+  color: #e2473c;
+  margin-bottom: 50px;
 }
-.sendb{
-  margin-left: 20px;
+.sendbt{
+  margin-right: 100px;
+  height: 40px;
+  border-color: rgb(255, 254, 254);
+  background-color: #ec792c;
+  width: 80px; 
+}
+.resetbt{
+  height: 40px;
+  border-color: rgb(255, 254, 254);
+  background-color: #ec792c;
+  width: 80px; 
 }
 .suptp{
   color: #e23cd4;
   font-size: 30px;
-  margin-left: 100px;
+  margin-left: -350px;
+  margin-top: 50px;
+ 
 }

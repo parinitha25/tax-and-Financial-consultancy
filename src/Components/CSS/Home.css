@@ -67,7 +67,6 @@
   .makes 
   {
     position: absolute; 
-    background-color:black;
     border-color:white;
     border-radius: 0px;
     top: 350px; 
@@ -88,20 +87,42 @@
     margin-top:130px;
   }
   .service{
-    color:purple;
+    color:rgb(233, 41, 41);
     margin-top: -30px;
+    font-size: 50px;
+    
   }
   .serviceo{
-    color:purple;
+    color:rgb(15, 179, 10);
     margin-top: 100px;
+    font-size: 50px;
   }
   .cimg{
    width: 300px;
    height: 200px;
   }
+  .servicep{
+    margin-top: 60px;
+    font-size: 30px;
+    color:rgb(128, 0, 70)
+  }
+  .servicep2{
+    margin-top: 60px;
+    font-size: 25px;
+    color:rgb(223, 17, 130)
+  }
+  .servicep3{
+    margin-top: 50px;
+    /* font-size: 25px; */
+  
+  }
+  .cfont{
+    margin-left: 90px;
+    margin-right: 70px;
+  }
   .cimg:hover{
     width: 350px;
-    height: 200px;
+    height: 250px;
    }
   select{
     width: 200px;
@@ -109,6 +130,11 @@
   }
   .mtop{
     margin-top: 50px;
+    margin-left: -150px;
+  }
+  .mtopa{
+    margin-top: -0.5px;
+    margin-left: -50px;
   }
   .imgc{
       width: 500px;
@@ -121,11 +147,11 @@
   .about{
     height: 800px;
     background-image: url("../../images/hero-company.jpg");
-    width: 1070px;
+    width: 1100px;
     background-repeat: no-repeat;
     margin-top: 100px;
-    margin-left: 70px;
-    margin-right:100px;
+    margin-left: 90px;
+    margin-right:130px;
   }
   .aboutp{
     text-align: left;
@@ -145,7 +171,8 @@
     margin-bottom: 1.5rem;
   }
   .tbutton{
-    margin-left: -200px;
+    margin-left: -300px;
+    margin-top: 20px;
   }
  .aboutus{
    font-size: 50px;
@@ -153,10 +180,7 @@
  }
   .aptb{
     position: absolute; 
-    background-color:black;
-    /* border-color:green; */
     border-radius: 0px;
-    /* top: 100px;  */
     left: 170px; 
     height: 50px;
     font-weight: bold;
@@ -164,6 +188,6 @@
   }
   
   .timg{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
   }

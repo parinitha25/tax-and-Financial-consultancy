@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './CSS/Service.css';
+import {Card, CardGroup, CardBody} from 'reactstrap';
+import Navbar from './Navbar';
 
 class Service extends Component {
   render() {
     return (
       <div>
+        <Navbar/>
         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
@@ -31,7 +34,7 @@ class Service extends Component {
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
              <h1 className="expert"><i>Our Clients</i></h1>
-        <div className="row">
+        <div className="row backgroundcolor">
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
               <img src={require('../images/logo2.png')} alt="Card image" className="logoi"/>
               <p className="logop"><i>AICPA Tax Center</i></p>
@@ -59,21 +62,33 @@ class Service extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>    
-          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
           <h1 className="taxus"><i>Tax Service</i></h1>
-            <p className="servph"><b>Tax Deducted at Source (TDS)</b></p>
-            <p className="servp">
-            1.Status of Tax Refund<br/>
-            2.File Income Tax Return<br/>
-            3.File Wealth Tax Return<br/>
-            4.Procedure of intimating AADHAAR number to Income Tax Department</p>
-            <p className="servph"><b>Tax Payment</b></p>
-           <p className="servp"> 
-            1.Introduction<br/>
-            2.Challan Status<br/>
-            3.Pay Tax Online</p>
+          <CardGroup className="cfonts">
+        <Card>
+          <CardBody>
+            <img src={require('../images/service5.jpg')} alt="Card image" className="cimgs"/>
+            <p className="servicep">Accounting Services</p>
+            <p>Our firm offers a complete range of accounting Services, We prepare Financial Statement in accordance with GAAP, We also assist in Preparation of customs Financial report which suits the Managerial needs. </p>    
+          </CardBody>
+        </Card>
+        <Card>     
+          <CardBody>
+            <img  src={require('../images/service4.jpg')} alt="Card image" className="cimgs" />
+            <p className="servicep">GST Services</p>
+            <p>With an objective to fulfill the demands of our clients, we are offering a wide assortment of GST Services. Offered array of GST services is rendered with the following quality norms. Apart from this, offered GST services are executed as per the customers need.</p></CardBody>
+        </Card>
+        <Card>
+          <CardBody>
+            <img  src={require('../images/service3.jpg')} alt="Card image" className="cimgs" />
+            <p className="servicep">Book Keeping Services</p>
+            <p>We are offering a wide array of Book-Keeping Services. These presented bookkeeping services are offered by professionals in adherence to preset industry standards. In addition to this, offered bookkeeping services are appreciated due to their reasonable prices and perfect execution.  </p>
+          </CardBody>
+        </Card>
+      </CardGroup>
           </div>
+          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
       </div>
     );
@@ -81,3 +96,5 @@ class Service extends Component {
 }
 
 export default Service;
+
+

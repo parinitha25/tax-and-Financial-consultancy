@@ -1,41 +1,18 @@
 import React, { Component } from 'react';
-import logot from '../logot.svg';
+// import logot from '../logot.svg';
 import './CSS/Home.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Form,Button, NavDropdown } from 'react-bootstrap';
+import { Form,Button} from 'react-bootstrap';
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from "mdbreact";
 import {Card, CardGroup, CardBody} from 'reactstrap';
+import Navbar from './Navbar';
+
 
 class Home extends Component {
   render() {
     return (
       <div>
-      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-info navbar">
-        <a class="navbar-brand" href="#"> <img src={logot} className="img" alt="logo" /></a>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-        <a class="nav-link " href="./home">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-        <a class="nav-link" href="./about">About Us</a>
-            </li>
-            <li class="nav-item">
-        <a class="nav-link" href="./service">Services</a>
-            </li>
-            <li class="nav-item">
-                <NavDropdown title="Pages" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#">Gallery</NavDropdown.Item>
-                <NavDropdown.Item href="#">Appointment</NavDropdown.Item>
-                <NavDropdown.Item href="#">FAQ</NavDropdown.Item>
-                </NavDropdown>
-            </li>
-            <li class="nav-item">
-        <a class="nav-link" href="./contact">ContactUs</a>
-            </li>
-            </ul>
-        </div>
-      </nav>
+      <Navbar/>
       <MDBContainer>
         <MDBCarousel
           activeItem={1}
@@ -68,21 +45,27 @@ class Home extends Component {
         </MDBCarouselInner>
         </MDBCarousel>
       </MDBContainer>
-      <h2 className="serviceo">Our Services</h2>
-      <CardGroup>
+      <p className="serviceo">Our Services</p>
+      <CardGroup className="cfont">
         <Card>
           <CardBody>
-            <img src={require('../images/service1.jpg')} alt="Card image" className="cimg"/>
+            <img src={require('../images/service5.jpg')} alt="Card image" className="cimg"/>
+            <p className="servicep">Accounting Services</p>
+            <p>Our firm offers a complete range of accounting Services, We prepare Financial Statement in accordance with GAAP, We also assist in Preparation of customs Financial report which suits the Managerial needs. </p>    
           </CardBody>
         </Card>
         <Card>     
           <CardBody>
-            <img  src={require('../images/service2.jpg')} alt="Card image" className="cimg" />
+            <img  src={require('../images/service4.jpg')} alt="Card image" className="cimg" />
+            <p className="servicep">GST Services</p>
+            <p>In order to meet various demands of our esteemed clients, we are engaged in providing an optimum quality array of GST Services.</p>
           </CardBody>
         </Card>
         <Card>
           <CardBody>
             <img  src={require('../images/service3.jpg')} alt="Card image" className="cimg" />
+            <p className="servicep">Book Keeping Services</p>
+            <p>We are offering a wide array of Book-Keeping Services. These presented bookkeeping services are offered by professionals in adherence to preset industry standards. In addition to this, offered bookkeeping services are appreciated due to their reasonable prices and perfect execution.  </p>
           </CardBody>
         </Card>
       </CardGroup>
@@ -108,7 +91,7 @@ class Home extends Component {
       <div className="row">
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
         <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-        <h2 className="service">Tax Calculator</h2>
+        <p className="service">Tax Calculator</p>
       <div className="row">
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
         <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
@@ -132,7 +115,7 @@ class Home extends Component {
         </Form>
         </div>
         <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-        <Form>
+        <Form className="mtopa">
           <Form.Group>
             <label className="formc"><b>Country of residence</b></label><br/>
             <Form as="select">
@@ -156,26 +139,32 @@ class Home extends Component {
           </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
       </div>
-          <h2 className="serviceo">Latest News</h2>
-      <CardGroup>
+          <p className="serviceo">Latest News</p>
+      <CardGroup className="cfont">
         <Card>
           <CardBody>
-            <img src={require('../images/tax.jpg')} alt="Card image" className="timg" />
+            <img src={require('../images/latest.jpg')} alt="Card image" className="timg" />
+            <p className="servicep2">Registrations Service</p>
+            <p className="servicep3">With our in-depth knowledge of this domain, we are actively engaged in providing an excellent quality range of Registrations Service.</p>
           </CardBody>
         </Card>
         <Card>     
           <CardBody>
-            <img  src={require('../images/tax2.jpg')} alt="Card image" className="timg" />
+            <img  src={require('../images/latest1.png')} alt="Card image" className="timg" />
+            <p className="servicep2">Band Registration Service</p>
+            <p className="servicep3">With an objective to fulfill the demands of our clients, we are engaged in providing a wide array of Band Registration Service.</p>
           </CardBody>
         </Card>
         <Card>
           <CardBody>
-            <img  src={require('../images/tax3.jpg')} alt="Card image"  className="timg"/>
+            <img  src={require('../images/latest2.png')} alt="Card image"  className="timg"/>
+            <p className="servicep2">Domain Name Registration Service</p>
+            <p >Backed by rich industry experiences; we are highly engaged in offering a premium quality range of Domain Name Registration Service.</p>
           </CardBody>
         </Card>
       </CardGroup>
       {/* </div> */}
-      // <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
+     <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
      
       </div>
     );
