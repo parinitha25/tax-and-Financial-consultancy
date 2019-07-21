@@ -1,16 +1,28 @@
 .width{
-    width: 300px;
-    border-top:0px;
-    border-left: 0px;
-    border-right: 0px;
-}
-b{
-    font-size: 20px;
+  width: 300px;
+  border-top:0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-left: 20px;
 }
 .sendb{
-    left: 200px;
-   
+  left: 200px;  
 }
-.appointment{
+.formg{
+  margin-top:180px;
+  font-size: 50px;
+  color: #4c3ce2;
+  margin-bottom: 50px;
+  margin-left:100px; 
+
+}
+.date{
+  margin-left: 100px;
+}
+.backgroundci{
+  background-image: url('../../images/serviceb.jpg');
+  height: 300px;
+  width:100%;
+  background-size: cover;
   margin-top: 100px;
 }

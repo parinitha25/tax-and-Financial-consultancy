@@ -118,21 +118,28 @@ h4 {
 	font-weight: bold;
 	color: white;
 }
-.width{
-  width: 300px;
+.logout{
+  margin-left: 50px;
 }
-b{
-  font-size: 20px;
+.searchi{
+  margin-left: 10px;
+  border-radius: 50px;
+  margin-top: 10px;
 }
-.sendb{
-  left: 200px;
- 
+.searchp{
+  margin-left: 200px;
 }
-select{
-  width: 200px;
-  height:30px;
+.searchia{
+  width: 30px;
+  height: 30px;
+  margin-top:-70px;
+  margin-left: 170px;
 }
-.mtop{
-  margin-top: 50px;
 
+.nav-item{
+  font-size: 20px;
+  margin-top: 25px;
+}
+.pages{
+  margin-top: -1px;
 }

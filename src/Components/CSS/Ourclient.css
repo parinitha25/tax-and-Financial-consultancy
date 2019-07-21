@@ -1,11 +1,16 @@
 .ourcp{
-    margin-top: 100px;
-    font-size: 50px;
-    color: rgb(247, 21, 21);
+  margin-top: 100px;
+  font-size: 50px;
+  color: rgb(247, 21, 21);
 }
 .ourcpa{
-    margin-top: 50px;
-    font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;  
+  margin-top: 50px;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: 100px;  
+}
+.imgoc{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }

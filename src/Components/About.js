@@ -9,11 +9,11 @@ class About extends Component {
       <div>
         <Navbar/>
         <div className="row">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div className="backgrounda"></div>
           </div>
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
         </div>
         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
@@ -33,7 +33,7 @@ class About extends Component {
         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
-          <img  src={require('../images/benifits.jpg')} alt="Card image" className="bimg" />
+          <img  src={require('../images/benifitsa.jpg')} alt="Card image" className="bimg" />
         <div className="row">
           <div className="col-xs-7 col-sm-7 col-md-7 col-lg-7"></div>
           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 benifit"> 
@@ -41,7 +41,7 @@ class About extends Component {
             <p><h3>1.Nature of income</h3>
               The income received from consultancy is classified as income from profits and gains of business or profession, whereas in case of employment, it is considered as salary income. </p>
             <p><h3>2.Advance tax</h3>
-              In case of employment, tax is withheld by the employer every month at an average rate of tax applicable to the employee. </p> 
+            In case of a salaried employee, income tax is calculated and deducted by the employer every month as per the tax rate applicable to the employee. When it comes to consultancy, compensation payment is received post-TDS, which is at a flat rate of 10 per cent from consultancy fee.</p> 
           </div>
         </div>
            </div>
@@ -74,10 +74,12 @@ class About extends Component {
             <img src={require('../images/expert3.jpg')} alt="Card image" className="tmimg" />
             <p>Ross McEwan</p>
             <p>CEO</p>
-            <div class="dropdown-content">
-              <center><label className="labeln">rossmen12@gmail.com</label></center>
-              <p> 08048921603</p>
-              {/* <img src={require('../images/email1.png')} alt="Card image" className="emaili" /> */}
+            <div class="dropdown-content">   
+              <img src={require('../images/email1.png')} alt="Card image" className="emaili" />
+              <label className="labeln">rossmen12@gmail.com</label>
+              <img src={require('../images/phone1.jpg')} alt="Card image" className="phonei" />
+              <label className="labelp">08048921603</label>
+              
             </div>
           </div>
           </CardBody>
@@ -89,8 +91,10 @@ class About extends Component {
             <p>Sarah Danckert</p>
             <p>Business Reporter.</p>
             <div class="dropdown-content">
-              <center><label className="labeln">sarah345@gmail.com</label></center>
-              <p> 0804567891</p>
+            <img src={require('../images/email1.png')} alt="Card image" className="emaili" />
+              <label className="labeln">sarahd345@gmail.com</label>
+              <img src={require('../images/phone1.jpg')} alt="Card image" className="phonei" />
+              <label className="labelp">0804567891</label>
             </div>
           </div>
           </CardBody>
@@ -99,11 +103,13 @@ class About extends Component {
           <CardBody>
           <div class="dropdown">
             <img  src={require('../images/expert2.jpg')} alt="Card image"  className="tmimg"/>
-            <p>	Kumar Birla</p>
+            <p>Kumar Birla</p>
             <p>Advisor</p>
             <div class="dropdown-content">
-              <center><label className="labeln">kumar789@gmail.com</label></center>
-              <p> 0947393027</p>
+            <img src={require('../images/email1.png')} alt="Card image" className="emaili" />
+              <label className="labeln">kumar789@gmail.com</label>
+              <img src={require('../images/phone1.jpg')} alt="Card image" className="phonei" />
+              <label className="labelp">0947393027</label>
             </div>
           </div>
           </CardBody>
@@ -115,14 +121,43 @@ class About extends Component {
             <p>Jeff Bezos</p>
             <p>Manager</p>
             <div class="dropdown-content">
-              <center><label className="labeln">jeff456@gmail.com</label></center>
-              <p> 0354830922</p>
+            <img src={require('../images/email1.png')} alt="Card image" className="emaili" />
+              <label className="labeln">jeffbezs456@gmail.com</label>
+              <img src={require('../images/phone1.jpg')} alt="Card image" className="phonei" />
+              <label className="labelp">0354830922</label>
             </div>
           </div>
           </CardBody>
         </Card>
       </CardGroup>
       </div>
+      </div>
+      <div className="row">
+          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+          <p className="peoplep"><i>“What People Say”</i></p>
+      <div className="row">
+          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 peoplepa">
+            <p>1.How will my financial planning be done?</p>
+            <p>->Our experts use proprietary technology to develop customised plans as per the financial goals of each customer.</p>
+            <p>2.What is Financial Planning?</p>
+            <p>->Financial Planning is the process of developing strategies to help people achieve their life goals by managing their financial affairs. It often covers Cash Flow Management, Retirement Planning, Insurance and Tax Management.</p>
+            <p>3.Do You Need a Financial Planner?</p>
+            <p>->Every individual who wants to meet short and long term financial goals, needs a Financial Planner.</p>
+          </div>
+          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5  peoplepb">
+            <p>4.Who are the experts that will provide Financial Planning Assistance?</p>
+            <p>->We have multiple certified advisors who have more than 20 years of experience each in the area of Financial planning and portfolio management.</p>
+            <p>5.What are the benefits of working with a financial planner?</p>
+            <p>->They determine your current financial situation with regard to income, savings, living expenses, debts and also help in mitigating risks associated with your investments.</p>
+            <p>6.How many clients do you currently have?</p>
+            <p>->We are currently handling 1000 plus paid services client and 3,000 plus retail client.</p>
+          </div>
+          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+          </div>
+        </div>
+          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
       </div>
       </div>
     );
@@ -131,9 +166,9 @@ class About extends Component {
 
 export default About;
 
-// <div class="dropdown">
+{/* // <div class="dropdown">
 //                 <img className="pic1" src={require('../Image/pic1.jpg')} alt="no image"></img>
 //                 <div class="dropdown-content">
 //                   <center><label>Veg Fired Rice</label></center>
 //                 </div>
-//               </div>
+//               </div> */}

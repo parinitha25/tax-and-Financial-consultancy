@@ -9,46 +9,27 @@ class Contact extends Component {
       <div>
         <Navbar/>
         <div className="row">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div className="backgroundc"></div>
+            <div className="contactpa"><i>Contact Us</i></div>
           </div>
-          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
         </div>
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p className="taxfind"><i>How To Find Us?</i></p>  
+          <div className="row">
+          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>  
+          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5"> 
+            <p className="taxfind">How To Find Us?</p>  
             <p className="taxhead"><i>Head Quarters</i></p> 
             <p className="addrp">A&D Consultancy
                 38, 2nd Main, 7th Cross, Rangappa Laypout Banshankari, 3rd Stage, Near Annapurnay Shri Temple, Katriguppe, 
-                Bangalore-560085 </p>   
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>  
-          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">  
+                canada-560085<br/>
+                <p className="emailp">Email:</p>Adconsultancy@gmail.com<br/>
+                <p className="emailp">Phonenumer:</p>0912347950</p>   
             <p className="suptp"><i>Support Center</i></p>   
-            <p className="custpa">Tax Helplines​</p>
-          <div className="row">
-          <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
-            <p className="custp">Aaykar Sampark Kendra 
-            <img className="custimg" src={require('../images/customer.png')} alt="First slide" /></p>
-            <p className="cparagraph">​​Income tax/PAN/TAN
-              General Queries</p><br/>
-            <p className="custp">Jeanne Bliss
-            <img className="custimg" src={require('../images/customerw.png')} alt="First slide" /></p>
-            <p className="cparagrapha">​​Income tax/
-              General Queries</p>
-          </div>
-          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"> 
-            <div><img className="phoneimg" src={require('../images/phone.jpg')} alt="First slide" /></div> 
-            <div><img className="phoneimga" src={require('../images/phone.jpg')} alt="First slide" /></div>
-            </div>
-            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"> 
-            <p className="number">18001801961/1961</p>
-          <p className="numbera">1800180546/6743</p>
-            </div>
-          </div>
+            <p className="addrp">No 459/30, 30th Cross, 4th Block, Bangalore - 560011, Near Police Station
+            <p className="emailp">Email:</p>Adconsultancy@gmail.com<br/>
+                <p className="emailp">Phonenumer:</p>0912347950</p>
           </div>
           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
           <Form>
@@ -64,11 +45,19 @@ class Contact extends Component {
             <Form.Group>
               <label><b>Message</b></label><br/>
               <input type="text" className="width"  />
+              <input type="text" className="width"  />
+              <input type="text" className="width"  />
+              <input type="text" className="width"  />
+              <input type="text" className="width"  />
+              <input type="text" className="width"  />
+              <input type="text" className="width"  />
             </Form.Group>
               <button  type="submit" className="sendbt">Send</button>
               <button type="submit" className="resetbt">Reset</button>
           </Form>
           </div>
+          </div>
+        </div>
         </div>
       </div>
     );

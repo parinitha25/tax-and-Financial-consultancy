@@ -45,15 +45,44 @@ class Ourclient extends Component {
               <p className="ourcpa">"Userback makes so much sense! It simply changes the way we communicate with our clients and the way our clients collect feedback from their customers"</p>
         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-              <img className="d-block w-60 imgoc" src={require('../images/clients1.jpg')} alt="First slide" />
-              <img className="d-block w-60 imgoc" src={require('../images/clients4.jpg')} alt="First slide" />
-              <img className="d-block w-60 imgoc" src={require('../images/clients6.jpg')} alt="First slide" />
-              <img className="d-block w-60 imgoc" src={require('../images/clients3.jpg')} alt="First slide" />
-              <img className="d-block w-60 imgoc" src={require('../images/clients2.jpeg')} alt="First slide" />
-              <img className="d-block w-60 imgoc" src={require('../images/clients5.jpg')} alt="First slide" />
+          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+        <div className="row">
+          <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <img className="imgoc" src={require('../images/clients1.jpg')} alt="First slide" />
+            <p>Aahna</p>
+          </div>
+          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <img className="imgoc" src={require('../images/clients4.jpg')} alt="First slide" />
+            <p>Aadita</p>
+          </div>
+          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <img className="imgoc" src={require('../images/clients6.jpg')} alt="First slide" />
+            <p>Kumar Birla</p>
+          </div>
+          <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+          </div>  
+        <div className="row">
+          <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <img className="imgoc" src={require('../images/clients3.jpg')} alt="First slide" />
+            <p>	Aaditya</p>
+            </div>
+            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <img className="imgoc" src={require('../images/clients2.jpg')} alt="First slide" />
+            <p>Aaghnya</p>
+            </div>
+            <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <img className="imgoc" src={require('../images/clients5.jpg')} alt="First slide" />
+            <p>Aamod</p>
+            </div>
+            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+        </div>
+          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
           </div>
           </div>
+        </div>
       </div>
     );
   }

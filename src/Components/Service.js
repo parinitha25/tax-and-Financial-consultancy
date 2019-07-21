@@ -9,11 +9,12 @@ class Service extends Component {
       <div>
         <Navbar/>
         <div className="row">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div className="backgrounds"></div>
+            <div className="servicepa"><i>Service</i></div>
           </div>
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
         </div>
         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
@@ -38,7 +39,7 @@ class Service extends Component {
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
               <img src={require('../images/logo2.png')} alt="Card image" className="logoi"/>
               <p className="logop"><i>AICPA Tax Center</i></p>
-              <p className="ausp">The AICPA's founding defined accountancy as a profession characterized by educational requirements, professional standards, 
+              <p className="ausp1">The AICPA's founding defined accountancy as a profession characterized by educational requirements, professional standards, 
                 a code of professional ethics, and alignment with the public interest.</p>
           </div>
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
@@ -55,7 +56,7 @@ class Service extends Component {
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
               <img src={require('../images/logo4.jpg')} alt="Card image" className="logoi"/>
               <p className="logop"><i>JWSS Tax Center</i></p>
-              <p className="ausp">I am professional tax accountant with over 5 years of experience. I pride myself in helping my clients save money on taxes and getting them the maximum refunds allowed legally.
+              <p className="ausp1">I am professional tax accountant with over 5 years of experience. I pride myself in helping my clients save money on taxes and getting them the maximum refunds allowed legally.
              </p>
           </div>
         </div>
@@ -68,22 +69,22 @@ class Service extends Component {
           <CardGroup className="cfonts">
         <Card>
           <CardBody>
-            <img src={require('../images/service5.jpg')} alt="Card image" className="cimgs"/>
-            <p className="servicep">Accounting Services</p>
-            <p>Our firm offers a complete range of accounting Services, We prepare Financial Statement in accordance with GAAP, We also assist in Preparation of customs Financial report which suits the Managerial needs. </p>    
+            <img src={require('../images/calculatora.jpg')} alt="Card image" className="cimgs"/>
+            <p className="servicep">CORPORATE TAX</p>
+            <p>Our Tax Knowledge and Solutions Team is a dedicated group of professionals, rich in experience on Tax and Regulatory matters. Our team stays constantly abreast with changes in tax policies, administration  and international jurisprudence. We endeavor to identify potential threats & opportunities and advise on appropriate strategies to mitigate exposure and optimize tax incidence on our clients.</p>    
           </CardBody>
         </Card>
         <Card>     
           <CardBody>
-            <img  src={require('../images/service4.jpg')} alt="Card image" className="cimgs" />
-            <p className="servicep">GST Services</p>
-            <p>With an objective to fulfill the demands of our clients, we are offering a wide assortment of GST Services. Offered array of GST services is rendered with the following quality norms. Apart from this, offered GST services are executed as per the customers need.</p></CardBody>
+            <img  src={require('../images/calculatorb.jpg')} alt="Card image" className="cimgs" />
+            <p className="servicep">INTERNATIONAL TAX</p>
+            <p>Our International Tax specialists offer services that successfully align all the different areas of taxation into a benefit-driven strategy that is reflected favorably in the various financial parameters. Our people and global resources are able to help clients develop and execute business strategies quickly and effectively, with strong accountability and governance.</p></CardBody>
         </Card>
         <Card>
           <CardBody>
-            <img  src={require('../images/service3.jpg')} alt="Card image" className="cimgs" />
-            <p className="servicep">Book Keeping Services</p>
-            <p>We are offering a wide array of Book-Keeping Services. These presented bookkeeping services are offered by professionals in adherence to preset industry standards. In addition to this, offered bookkeeping services are appreciated due to their reasonable prices and perfect execution.  </p>
+            <img  src={require('../images/calculatorc.jpg')} alt="Card image" className="cimgs" />
+            <p className="servicep">GST</p>
+            <p>We have designed a comprehensive approach, which is aligned to the needs of our clients and we assist our clients in undertaking GST compliances.In order to meet various demands of our esteemed clients, we are engaged in providing an optimum quality array of GST Services. </p>
           </CardBody>
         </Card>
       </CardGroup>
