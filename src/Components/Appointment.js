@@ -3,6 +3,7 @@ import logot from '../logot.svg';
 import {Form,Button } from 'react-bootstrap';
 import './CSS/Appointment.css';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 class Appointment extends Component {
   render() {
@@ -34,7 +35,8 @@ class Appointment extends Component {
               <button type="submit" className="resetbt">Reset</button>
           </Form>
             </div>
-            </div>
+            <Footer/>
+      </div>
     );
   }
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './CSS/Service.css';
 import {Card, CardGroup, CardBody} from 'reactstrap';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 class Service extends Component {
   render() {
@@ -91,7 +92,9 @@ class Service extends Component {
           </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
+        <Footer/>
       </div>
+     
     );
   }
 }

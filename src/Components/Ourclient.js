@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import './CSS/Ourclient.css';
+import Footer from './Footer';
 
 class Ourclient extends Component {
   render() {
@@ -83,6 +84,7 @@ class Ourclient extends Component {
           </div>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }

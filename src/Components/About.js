@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './CSS/About.css';
 import {Card, CardGroup, CardBody} from 'reactstrap';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 class About extends Component {
   render() {
@@ -159,6 +160,7 @@ class About extends Component {
         </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
       </div>
+      <Footer/>
       </div>
     );
   }
@@ -166,9 +168,3 @@ class About extends Component {
 
 export default About;
 
-{/* // <div class="dropdown">
-//                 <img className="pic1" src={require('../Image/pic1.jpg')} alt="no image"></img>
-//                 <div class="dropdown-content">
-//                   <center><label>Veg Fired Rice</label></center>
-//                 </div>
-//               </div> */}

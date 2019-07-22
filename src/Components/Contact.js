@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './CSS/Contact.css';
 import {Form,Button } from 'react-bootstrap';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 class Contact extends Component {
   render() {
@@ -59,6 +60,7 @@ class Contact extends Component {
           </div>
         </div>
         </div>
+        <Footer/>
       </div>
     );
   }

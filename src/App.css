@@ -118,28 +118,27 @@ h4 {
 	font-weight: bold;
 	color: white;
 }
-.logout{
-  margin-left: 50px;
+
+select{
+  width: 200px;
+  height:30px;
 }
-.searchi{
-  margin-left: 10px;
-  border-radius: 50px;
-  margin-top: 10px;
+.mtop{
+  margin-top: 50px;
+
 }
 .searchp{
-  margin-left: 200px;
+  margin-left:300px;
+}
+.seachi{
+  margin-left: 10px;
 }
 .searchia{
-  width: 30px;
-  height: 30px;
-  margin-top:-70px;
-  margin-left: 170px;
+  width:20px;
+  height: 20px;
+  margin-top: -50px;
+  margin-left: 150px;
 }
-
-.nav-item{
-  font-size: 20px;
-  margin-top: 25px;
-}
-.pages{
-  margin-top: -1px;
+.logout{
+  margin-left: 100px;
 }

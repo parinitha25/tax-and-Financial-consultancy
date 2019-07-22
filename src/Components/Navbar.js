@@ -36,7 +36,6 @@ class Navbar extends Component {
           <li class="nav-item">
           <input type="text" className="searchi"></input>
           <img src={require('../images/search.jpg')} alt="search image" className="searchia"/>
-       
           </li>
           <li class="nav-item">
           <a class="nav-link logout" href="./home">Logout</a>

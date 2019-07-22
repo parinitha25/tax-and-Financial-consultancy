@@ -6,13 +6,14 @@ import { Form,Button} from 'react-bootstrap';
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from "mdbreact";
 import {Card, CardGroup, CardBody} from 'reactstrap';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 class Home extends Component {
   render() {
     return (
       <div>
-      <Navbar/>
+      <Navbar/>  
       <MDBContainer>
         <MDBCarousel
           activeItem={1}
@@ -165,7 +166,7 @@ class Home extends Component {
       </CardGroup>
       {/* </div> */}
      <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
-     
+     <Footer/>
       </div>
     );
   }
