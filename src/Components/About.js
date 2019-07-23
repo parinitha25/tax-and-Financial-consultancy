@@ -133,34 +133,55 @@ class About extends Component {
       </CardGroup>
       </div>
       </div>
-      <div className="row">
+      <div className="row backendp">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
           <p className="peoplep"><i>“What People Say”</i></p>
       <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 peoplepa">
-            <p>1.How will my financial planning be done?</p>
-            <p>->Our experts use proprietary technology to develop customised plans as per the financial goals of each customer.</p>
-            <p>2.What is Financial Planning?</p>
-            <p>->Financial Planning is the process of developing strategies to help people achieve their life goals by managing their financial affairs. It often covers Cash Flow Management, Retirement Planning, Insurance and Tax Management.</p>
-            <p>3.Do You Need a Financial Planner?</p>
-            <p>->Every individual who wants to meet short and long term financial goals, needs a Financial Planner.</p>
+          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <div className="peoplep1">
+              <p>Team professional team</p>
+              <p>Taxexpert field my tax for this year.They were very complicated as compared to any other due 
+                to a host of reasons.They handled my tax return very professionally and accrately.I am pleased
+                to recommend Taxexpert.</p>
+            </div><br/>
+              <img className="imgp" src={require('../images/clients1.jpg')} alt="First slide" />
+              <p className="colorwp2">Aahna
+              <p className="colorwp">Top Manager</p></p>
+            <div className="peoplep1">
+              <p>very knowledgeable tax accountants</p>
+              <p>Our experts use proprietary technology to develop customised plans as per the financial goals of each customer.
+              They handled my tax return very professionally and accrately</p>     
+            </div><br/>
+              <img className="imgp" src={require('../images/clients4.jpg')} alt="First slide" />
+              <p className="colorwp2">Aadita
+              <p className="colorwp">Coordinator</p></p>  
           </div>
-          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5  peoplepb">
-            <p>4.Who are the experts that will provide Financial Planning Assistance?</p>
-            <p>->We have multiple certified advisors who have more than 20 years of experience each in the area of Financial planning and portfolio management.</p>
-            <p>5.What are the benefits of working with a financial planner?</p>
-            <p>->They determine your current financial situation with regard to income, savings, living expenses, debts and also help in mitigating risks associated with your investments.</p>
-            <p>6.How many clients do you currently have?</p>
-            <p>->We are currently handling 1000 plus paid services client and 3,000 plus retail client.</p>
+           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <div className="peoplep1">
+              <p>Financial Planner</p>
+              <p>Every individual who wants to meet short and long term financial goals, needs a Financial Planner.
+                 each in the area of Financial planning and portfolio management.</p>
+            </div><br/>
+              <img className="imgp" src={require('../images/clients6.jpg')} alt="First slide" />
+              <p className="colorwp2">Kumar Birla
+              <p className="colorwp">Manager</p></p>
+         
+            <div className="peoplep1">
+              <p>Benefits tax and financial</p>
+              <p>They determine your current financial situation with regard to income, savings, living expenses, debts and also help in mitigating risks associated with your investments.</p>
+            </div><br/>  
+              <img className="imgp" src={require('../images/clients3.jpg')} alt="First slide" />
+              <p className="colorwp2">Aaditya
+              <p className="colorwp">CEO</p></p>
           </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          </div>
-        </div>
+      </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
       </div>
       <Footer/>
+      </div>
       </div>
     );
   }
