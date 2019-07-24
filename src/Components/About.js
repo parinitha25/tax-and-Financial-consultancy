@@ -162,7 +162,7 @@ class About extends Component {
             <div className="peoplep1">
               <p>Financial Planner</p>
               <p>Every individual who wants to meet short and long term financial goals, needs a Financial Planner.
-                 each in the area of Financial planning and portfolio management.</p>
+                 each in the area of Financial planning and portfolio management.x for this year.</p>
             </div><br/>
               <img className="imgp" src={require('../images/clients6.jpg')} alt="First slide" />
               <p className="colorwp2">Kumar Birla
@@ -170,7 +170,9 @@ class About extends Component {
          
             <div className="peoplep1">
               <p>Benefits tax and financial</p>
-              <p>They determine your current financial situation with regard to income, savings, living expenses, debts and also help in mitigating risks associated with your investments.</p>
+              <p>They determine your current financial situation with regard to income, savings, living expenses, debts and also help in mitigating risks associated with your investments.
+              They handled my tax return very professionally and accrately.
+              </p>
             </div><br/>  
               <img className="imgp" src={require('../images/clients3.jpg')} alt="First slide" />
               <p className="colorwp2">Aaditya

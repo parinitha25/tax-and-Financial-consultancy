@@ -176,8 +176,9 @@
     height: 50px;
     border-radius: 50%;
     margin-left: -100px;
+    border-style: 0px solid;
 }
 .colorwp2{
-     margin-top: -50px;
+    margin-top: -50px;
     margin-left: 40px;
 }
