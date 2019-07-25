@@ -17,24 +17,24 @@ class Ourclient extends Component {
              <h1 className="expert"><i>Our Clients</i></h1>
         <div className="row backgroundcolor">
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
-              <img src={require('../images/logo2.png')} alt="Card image" className="logoi"/>
+              <img src={require('../images/logo2.png')} alt="Card" className="logoi"/>
               <p className="logop"><i>AICPA Tax Center</i></p>
               <p className="ausp">The AICPA's founding defined accountancy as a profession characterized by educational requirements, professional standards, 
                 a code of professional ethics, and alignment with the public interest.</p>
           </div>
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
-              <img src={require('../images/logo3.png')} alt="Card image" className="logoi"/>
+              <img src={require('../images/logo3.png')} alt="Card" className="logoi"/>
               <p className="logop"><i>Tax And Super Australia</i></p>
               <p className="ausp">Superannuation in Australia is taxed by the Australian taxation system at three points: on contributions received by a superannuation fund.
                 on investment income earned by the fund, and on benefits paid by the fund.</p>
           </div>
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
-              <img src={require('../images/logo5.jpg')} alt="Card image" className="logoi"/>
+              <img src={require('../images/logo5.jpg')} alt="Card" className="logoi"/>
               <p className="logop"><i>BP Strategic Solutions</i></p>
               <p className="ausp">Personalized Service, Business Plans, Financial Modeling, Budgeting and financial analysis. We have one goal at BP Strategics.the fields of accounting,and business strategy.</p>
           </div>
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
-              <img src={require('../images/logo4.jpg')} alt="Card image" className="logoi"/>
+              <img src={require('../images/logo4.jpg')} alt="Card" className="logoi"/>
               <p className="logop"><i>JWSS Tax Center</i></p>
               <p className="ausp">I am professional tax accountant with over 5 years of experience. I pride myself in helping my clients save money on taxes and getting them the maximum refunds allowed legally.
              </p>

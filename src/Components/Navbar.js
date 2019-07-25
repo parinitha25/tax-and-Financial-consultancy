@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form,Button, NavDropdown } from 'react-bootstrap';
+import {NavDropdown } from 'react-bootstrap';
 import logot from '../logot.svg';
 import '../App.css';
 
@@ -8,7 +8,7 @@ class Navbar extends Component {
     return (
       <div>
         <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-info navbar">
-        <a class="navbar-brand" href="#"> <img src={logot} className="img" alt="logo" /></a>
+        <img src={logot} className="img" alt="logo" />
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
           <li class="nav-item ">
@@ -35,7 +35,7 @@ class Navbar extends Component {
           </li>
           <li class="nav-item">
           <input type="text" className="searchi"></input>
-          <img src={require('../images/search.jpg')} alt="search image" className="searchia"/>
+          <img src={require('../images/search.jpg')} alt="search" className="searchia"/>
           </li>
           <li class="nav-item">
           <a class="nav-link logout" href="./home">Logout</a>

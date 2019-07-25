@@ -34,7 +34,7 @@ class About extends Component {
         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
-          <img  src={require('../images/benifitsa.jpg')} alt="Card image" className="bimg" />
+          <img  src={require('../images/benifitsa.jpg')} alt="Card" className="bimg" />
         <div className="row">
           <div className="col-xs-7 col-sm-7 col-md-7 col-lg-7"></div>
           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 benifit"> 
@@ -72,13 +72,13 @@ class About extends Component {
         <Card>
           <CardBody>
           <div class="dropdown">
-            <img src={require('../images/expert3.jpg')} alt="Card image" className="tmimg" />
+            <img src={require('../images/expert3.jpg')} alt="Card" className="tmimg" />
             <p>Ross McEwan</p>
             <p>CEO</p>
             <div class="dropdown-content">   
-              <img src={require('../images/email1.png')} alt="Card image" className="emaili" />
+              <img src={require('../images/email1.png')} alt="Card" className="emaili" />
               <label className="labeln">rossmen12@gmail.com</label>
-              <img src={require('../images/phone1.jpg')} alt="Card image" className="phonei" />
+              <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
               <label className="labelp">08048921603</label>
               
             </div>
@@ -88,13 +88,13 @@ class About extends Component {
         <Card>     
           <CardBody>
           <div class="dropdown">
-            <img  src={require('../images/expert4.jpg')} alt="Card image" className="tmimg" />
+            <img  src={require('../images/expert4.jpg')} alt="Card" className="tmimg" />
             <p>Sarah Danckert</p>
             <p>Business Reporter.</p>
             <div class="dropdown-content">
-            <img src={require('../images/email1.png')} alt="Card image" className="emaili" />
+            <img src={require('../images/email1.png')} alt="Card" className="emaili" />
               <label className="labeln">sarahd345@gmail.com</label>
-              <img src={require('../images/phone1.jpg')} alt="Card image" className="phonei" />
+              <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
               <label className="labelp">0804567891</label>
             </div>
           </div>
@@ -103,13 +103,13 @@ class About extends Component {
         <Card>
           <CardBody>
           <div class="dropdown">
-            <img  src={require('../images/expert2.jpg')} alt="Card image"  className="tmimg"/>
+            <img  src={require('../images/expert2.jpg')} alt="Card"  className="tmimg"/>
             <p>Kumar Birla</p>
             <p>Advisor</p>
             <div class="dropdown-content">
-            <img src={require('../images/email1.png')} alt="Card image" className="emaili" />
+            <img src={require('../images/email1.png')} alt="Card" className="emaili" />
               <label className="labeln">kumar789@gmail.com</label>
-              <img src={require('../images/phone1.jpg')} alt="Card image" className="phonei" />
+              <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
               <label className="labelp">0947393027</label>
             </div>
           </div>
@@ -118,13 +118,13 @@ class About extends Component {
         <Card>
           <CardBody>
           <div class="dropdown">
-            <img  src={require('../images/expert1.png')} alt="Card image"  className="tmimg"/>
+            <img  src={require('../images/expert1.png')} alt="Card"  className="tmimg"/>
             <p>Jeff Bezos</p>
             <p>Manager</p>
             <div class="dropdown-content">
-            <img src={require('../images/email1.png')} alt="Card image" className="emaili" />
+            <img src={require('../images/email1.png')} alt="Card" className="emaili" />
               <label className="labeln">jeffbezs456@gmail.com</label>
-              <img src={require('../images/phone1.jpg')} alt="Card image" className="phonei" />
+              <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
               <label className="labelp">0354830922</label>
             </div>
           </div>

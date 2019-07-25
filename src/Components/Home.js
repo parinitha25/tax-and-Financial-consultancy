@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './CSS/Home.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Form,Button} from 'react-bootstrap';
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from "mdbreact";
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from "mdbreact";
 import {Card, CardGroup, CardBody} from 'reactstrap';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -50,21 +50,21 @@ class Home extends Component {
       <CardGroup className="cfont">
         <Card>
           <CardBody>
-            <img src={require('../images/service5.jpg')} alt="Card image" className="cimg"/>
+            <img src={require('../images/service5.jpg')} alt="Card " className="cimg"/>
             <p className="servicep">Accounting Services</p>
             <p>Our firm offers a complete range of accounting Services, We prepare Financial Statement in accordance with GAAP, We also assist in Preparation of customs Financial report which suits the Managerial needs. </p>    
           </CardBody>
         </Card>
         <Card>     
           <CardBody>
-            <img  src={require('../images/service4.jpg')} alt="Card image" className="cimg" />
+            <img  src={require('../images/service4.jpg')} alt="Card " className="cimg" />
             <p className="servicep">GST Services</p>
             <p>In order to meet various demands of our esteemed clients, we are engaged in providing an optimum quality array of GST Services.</p>
           </CardBody>
         </Card>
         <Card>
           <CardBody>
-            <img  src={require('../images/service3.jpg')} alt="Card image" className="cimg" />
+            <img  src={require('../images/service3.jpg')} alt="Card" className="cimg" />
             <p className="servicep">Book Keeping Services</p>
             <p>We are offering a wide array of Book-Keeping Services. These presented bookkeeping services are offered by professionals in adherence to preset industry standards. In addition to this, offered bookkeeping services are appreciated due to their reasonable prices and perfect execution.  </p>
           </CardBody>
@@ -144,21 +144,21 @@ class Home extends Component {
       <CardGroup className="cfont">
         <Card>
           <CardBody>
-            <img src={require('../images/latest.jpg')} alt="Card image" className="timg" />
+            <img src={require('../images/latest.jpg')} alt="Card" className="timg" />
             <p className="servicep2">Registrations Service</p>
             <p className="servicep3">With our in-depth knowledge of this domain, we are actively engaged in providing an excellent quality range of Registrations Service.</p>
           </CardBody>
         </Card>
         <Card>     
           <CardBody>
-            <img  src={require('../images/latest1.png')} alt="Card image" className="timg" />
+            <img  src={require('../images/latest1.png')} alt="Card" className="timg" />
             <p className="servicep2">Band Registration Service</p>
             <p className="servicep3">With an objective to fulfill the demands of our clients, we are engaged in providing a wide array of Band Registration Service.</p>
           </CardBody>
         </Card>
         <Card>
           <CardBody>
-            <img  src={require('../images/latest2.png')} alt="Card image"  className="timg"/>
+            <img  src={require('../images/latest2.png')} alt="Card"  className="timg"/>
             <p className="servicep2">Domain Name Registration Service</p>
             <p >Backed by rich industry experiences; we are highly engaged in offering a premium quality range of Domain Name Registration Service.</p>
           </CardBody>
