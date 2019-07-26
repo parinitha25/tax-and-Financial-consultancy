@@ -14,6 +14,41 @@ class Login extends Component {
       password:'',
     }
   }
+  handleChange=(e)=>{
+    this.setState({[e.target.name]:e.target.value});
+}
+handleSubmit=(e)=>{
+    e.preventDefault();
+    let t=0;
+    let reqobj={
+      Email:this.state.email,
+      Password:this.state.password,
+    }
+    let reg_pwd=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+    let reg_email=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(!this.state.email) this.setState({emailError:'Email is required'});
+      else if(!reg_email.test(this.state.email)) this.setState({emailError:'Invalid Email'}); 
+      else {
+          t++;
+          this.setState({emailError:''});
+      }
+
+      if(!this.state.password) this.setState({passwordError:'Password is required'});
+      else if(!reg_pwd.test(this.state.password)) this.setState({passwordError:'Invalid Password'});
+      else {
+          t++;
+          this.setState({passwordError:''});
+      }
+      if(t>1) {   
+        this.props.history.push('/home')    
+    }
+    console.log(reqobj);
+    login(reqobj).then(res => {
+    })
+    .catch (res=> {
+        prompt(res)
+    })
+}
   render() {
     const { email, password } = this.state
     return (
@@ -27,10 +62,12 @@ class Login extends Component {
               <Form.Group>
                 <label><b>Email</b></label><br/>
                 <input type="text" className="widthl" onChange={this.handleChange} name="email" value={email}/>
+                <p className="colorform">{this.state.emailError}</p>
               </Form.Group>
               <Form.Group>
                 <label><b>Password</b></label><br/>
                 <input type="text" className="widthl" onChange={this.handleChange} name="password" value={password}/>
+                <p className="colorform">{this.state.passwordError}</p>
               </Form.Group>
                 <Button variant="primary" type="submit">Login</Button>
             </Form>
