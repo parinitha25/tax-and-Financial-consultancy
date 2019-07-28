@@ -31,14 +31,15 @@ class Navbar extends Component {
             <a class="nav-link" href="./contact">ContactUs</a>
           </li>
           <li class="nav-item">
-          <p className="nav-link searchp">Search</p>
-          </li>
-          <li class="nav-item">
+          <div class="dropdown">
+          <img src={require('../images/searchi.png')} alt="search" className="searchia"/>
+          <div class="dropdown-content">
           <input type="text" className="searchi"></input>
-          <img src={require('../images/search.jpg')} alt="search" className="searchia"/>
+          </div>
+          </div>
           </li>
           <li class="nav-item">
-          <a class="nav-link logout" href="./home">Logout</a>
+          <a class="nav-link logout" href="./signup">Logout</a>
           </li>
           </ul>
         </div>

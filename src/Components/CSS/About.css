@@ -1,9 +1,9 @@
 .backgrounda{
-    background-image: url('../../images/aboutus.jpg');
-    height: 300px;
-    width:100%;
-    background-size: cover;
-    margin-top: 100px;
+  background-image: url('../../images/aboutus.jpg');
+  height: 200px;
+  width:100%;
+  background-size: cover;
+  margin-top: 100px;
 }
 .peoplep{
   margin-top:40px;
@@ -21,164 +21,151 @@
   margin-left: 100px;
 }
 .abouta{
-    margin-left: 350px;
-    margin-top:-223px;
-    margin-right: 200px;
-    /* background-color:#b0ade4; */
-    width: 260px;
-    font-size: 50px;
-    color: #e23cd4;
+  margin-left: 350px;
+  margin-top:-223px;
+  margin-right: 200px;
+  /* background-color:#b0ade4; */
+  width: 260px;
+  font-size: 50px;
+  color: #e23cd4;
 }
 .taxs{
-    margin-top: 150px;
-    margin-left: 30px;
-    color: #e23cd4
+  margin-top: 150px;
+  margin-left: 30px;
+  color: #e23cd4
 }
 .readb{
-    position: absolute; 
-    top: 500px; 
-    left: -400px; 
-    height: 50px;
-    border:none;
-    border-color: rgb(193, 224, 252);
-    background-color: #0a0911;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    width: 200px;
-    color: rgb(12, 248, 146);
-    
+  position: absolute; 
+  top: 550px; 
+  left: -300px; 
+  height: 50px;
+  border:none;
+  border-color: rgb(193, 224, 252);
+  background-color: #0a0911;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  width: 200px;
+  color: rgb(12, 248, 146);    
 }
 .taximg{
-    margin-top: 150px;
-    width: 530px;
-    height: 350px;
+  margin-top: 150px;
+  width: 530px;
+  height: 350px;
+  margin-right: -100px;
 }
 .bimg{
-    margin-top: 200px;
-    width:100%;
+  margin-top: 200px;
+  width:100%;
 }
 .backgroundb{
-    background-image: url('../../images/consulatancy.jpg');
-    height: 300px;
-    width:100%;
-    margin-top:900px;
-    background-size: cover;
+  background-image: url('../../images/consulatancy.jpg');
+  height: 300px;
+  width:100%;
+  margin-top:900px;
+  background-size: cover;
 }
 .benifit{
-    margin-left: 350px;
-    margin-top:-618px;
-    margin-right: 100px;
-    background-color:#7470b2;
-    margin-bottom: 300px;
+  margin-left: 30px;
+  margin-top:-518px;
+  margin-right: 100px;
+  background-color:#7470b2;
+  margin-bottom: 300px;
 }
 .benifita{
-   color: #e23cd4;
-  
+  color: #e23cd4; 
 }
 .p1{
-    margin-left: 300px;
-    text-align: left;
-    margin-top: 20px;
+  margin-left: 300px;
+  text-align: left;
+  margin-top: 20px;
 }
 .paragraph{
-    margin-top:50px;
-    margin-left: 30px;
-    color: #e23cd4;
+  margin-top:50px;
+  margin-left: 30px;
+  color: #e23cd4;
 }
 .tmimg{
-    width: 200px;
-    height: 200px;
-    
+  width: 200px;
+  height: 200px;    
 }
 .tmimg:hover{
-    opacity:1;
-    z-index: 1;
+  opacity:1;
+  z-index: 1;
 }
 .teamc{
-    margin-top:40px;
-    margin-left: 30px;
-    color: #e23cd4;  
+  margin-top:40px;
+  margin-left: 30px;
+  color: #e23cd4;  
 }
 .cardimgt{
-    margin-top: 70px;
+  margin-top: 70px;
 }
 .dropdown 
 {
 	position: relative;
 	display: inline-block;
 }
-
 .dropdown-content 
 {
 	display: none;
 	position: absolute;
 	z-index: 1;
 	background-color:#1a1718;
-    color: white;
-    height: 35px;
-    width: 50px;
-    margin-top: 10px;
-    margin-left:-1px;
-    margin-right:10px;
-    
+  color: white;
+  height: 35px;
+  width: 50px;
+  margin-top: 10px;
+  margin-left:-1px;
+  margin-right:10px;   
 }
 .dropdown:hover .dropdown-content
 {
-    display: block;
-    height: 285px;
-    width: 250px;
-    margin-top: -285px;
-    font-size: 22px;
-    font-style: italic;   
-    opacity:0.9;
-    z-index: 1;
-    margin-left: -30px;
+  display: block;
+  height: 285px;
+  width: 250px;
+  margin-top: -285px;
+  font-size: 22px;
+  font-style: italic;   
+  opacity:0.9;
+  z-index: 1;
+  margin-left: -30px;
 }
 .labeln{
-    margin-top:100px;
-    margin-left: 50px;
+  margin-top:100px;
+  margin-left: 50px;
 }
 .labelp{
-    margin-top:20px;
-    margin-left:10px;
+  margin-top:20px;
 }
 .emaili{
-    width:30px;
-    height: 30px;
-    margin-top:10px;
-    margin-right: -50px;
+  width:30px;
+  height: 30px;
+  margin-top:10px;
+  margin-right: -50px;
 }
 .phonei{
-    width:30px;
-    height: 30px;
-    margin-top:10px;
-    margin-left: -1px;
+  width:30px;
+  height: 30px;
+  margin-top:10px;
+  margin-left: -1px;
 }
 .peoplep1{
-    border: #0a0911;
-    border-style:solid;
+  border: #0a0911;
+  border-style:solid;
 }
 .colorwp{
-    color: rgb(57, 4, 204);
-    /* margin-top: -30px;
-    margin-left: 20px; */
+  color: rgb(57, 4, 204);
 }
-/* .backendp{
-    background-image: url('../../images/serviceb.jpg');
-    height: 500px;
-    width:100%;
-    background-size: cover;
-    margin-top: 100px;
-} */
+
 .imgp{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-left: -100px;
-    border-style: 0px solid;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: -100px;
+  border-style: 0px solid;
 }
 .colorwp2{
-    margin-top: -50px;
-    margin-left: 40px;
+  margin-top: -50px;
+  margin-left: 40px;
 }

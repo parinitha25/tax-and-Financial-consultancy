@@ -3,129 +3,71 @@ import {Form} from 'react-bootstrap';
 import './CSS/Appointment.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
-// import mobiscroll from '@mobiscroll/react-lite';
-
-// mobiscroll.settings = {
-//   theme: 'ios'
-// };
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css"
 
 class Appointment extends Component {
-  
+  constructor(props) {
+    super(props);
+    this.state = {
+      startDate: new Date()
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(date) {
+    this.setState({
+      startDate: date
+    });
+  }
   render() {
-    return (
+      return (
       <div>
         <Navbar/>
-        <div className="row">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div className="backgroundci"></div>
-            <div className="contactpa"><i>Appointment</i></div>
+          <div className="row">
+            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 appth">
+             <div className='apptname'><i>Appointment</i></div>
+             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            </div>
           </div>
           <Form>
             <label className="formg">Get in Touch</label>
-            <Form.Group >
+            <Form.Group className="date">
               <label><b>Name</b></label>
               <input type="text" className="width"/>
             </Form.Group>
-            <Form.Group>
+            <Form.Group className="date">
               <label><b>Email</b></label>
               <input type="text" className="width" />
             </Form.Group>
-            <Form.Group className="date">
-              <label><b>Date</b></label> */}
-              <input type="text" className="width" />
-              {/* <mobiscroll.Form>
-              <mobiscroll.FormGroup>
-        <mobiscroll.FormGroupTitle>Try different display modes</mobiscroll.FormGroupTitle>
-        <label>
-                      Bubble
-                      <mobiscroll.Date
-                          display="bubble"
-                          placeholder="Please Select..."
-                      />
-                  </label>
-              </mobiscroll.FormGroup>
-              <mobiscroll.FormGroup className="mbsc-padding">
-                  <p className="mbsc-thin">With inline display you can embed the Date & Time component in almost any markup or form.</p>
-              </mobiscroll.FormGroup>
-              <mobiscroll.FormGroup>
-                  <mobiscroll.FormGroupTitle>Embedded date picker</mobiscroll.FormGroupTitle>
-                  <mobiscroll.Date
-                      type="hidden"
-                      display="inline"
-                      layout="liquid"
-                      placeholder="Please Select..."
-                  />
-              </mobiscroll.FormGroup>
-          </mobiscroll.Form> */}
-  
-
-              <label><b>Time</b></label>
-              <input type="text" className="width"/>
+            <Form.Group>
+            <div>
+              <label className="datet"><b>Date</b></label>
+                <DatePicker className="dateta"
+                  selected={this.state.startDate}
+                  onChange={this.handleChange}
+                />
+            </div>
             </Form.Group>
-              <button  type="submit" className="sendbt">Send</button>
-              <button type="submit" className="resetbt">Reset</button>
+            <Form.Group >
+              <label className="datet"><b>Time</b></label>
+                  <DatePicker className="dateta"
+                    selected={this.state.startDate}
+                    onChange={this.handleChange}
+                    showTimeSelect
+                    showTimeSelectOnly
+                    timeIntervals={15}
+                    dateFormat="h:mm aa"
+                    timeCaption="Time"
+                  />
+              </Form.Group>
+                <button  type="submit" className="sendbta">Send</button>
+                <button type="submit" className="resetbta">Reset</button>
           </Form>
-        </div>
-          <Footer/>
-       </div>
+        <Footer/>
+      </div>
     );
   }
 }
-
 export default Appointment;
 
-// mobiscroll.settings = {
-//   theme: 'ios'
-// };
-
-// class App extends React.Component {
-//   render() {
-//       return (
-//           <mobiscroll.Form>
-//               <mobiscroll.FormGroup>
-//         <mobiscroll.FormGroupTitle>Try different display modes</mobiscroll.FormGroupTitle>
-//                   <label>
-//                       Bottom
-//                       <mobiscroll.Date
-//                           display="bottom"
-//                           placeholder="Please Select..."
-//                       />
-//                   </label>
-//                   <label>
-//                       Top
-//                       <mobiscroll.Date
-//                           display="top"
-//                           placeholder="Please Select..."
-//                       />
-//                   </label>
-//                   <label>
-//                       Center
-//                       <mobiscroll.Date
-//                           display="center"
-//                           placeholder="Please Select..."
-//                       />
-//                   </label>
-//                   <label>
-//                       Bubble
-//                       <mobiscroll.Date
-//                           display="bubble"
-//                           placeholder="Please Select..."
-//                       />
-//                   </label>
-//               </mobiscroll.FormGroup>
-//               <mobiscroll.FormGroup className="mbsc-padding">
-//                   <p className="mbsc-thin">With inline display you can embed the Date & Time component in almost any markup or form.</p>
-//               </mobiscroll.FormGroup>
-//               <mobiscroll.FormGroup>
-//                   <mobiscroll.FormGroupTitle>Embedded date picker</mobiscroll.FormGroupTitle>
-//                   <mobiscroll.Date
-//                       type="hidden"
-//                       display="inline"
-//                       layout="liquid"
-//                       placeholder="Please Select..."
-//                   />
-//               </mobiscroll.FormGroup>
-//           </mobiscroll.Form>
-//       );
-//   }   
-// }

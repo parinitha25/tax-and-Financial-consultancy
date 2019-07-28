@@ -11,7 +11,6 @@ footer
   grid-template-rows: 340px;
   grid-gap: 10px;
 }
-
 .fdiv1
 {
   padding-left: 100px;
@@ -108,4 +107,26 @@ footer
 	margin-top:10px;
   height: 50px;
 	background-color: #1a283a;
+}
+.icons{
+	position: absolute;
+}
+.fa {
+	padding: 20px;
+	font-size: 10px;
+	width: 1px;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+.fa-facebook {
+	color: white;
+}
+.fa-twitter {
+	color: white;
+}
+.fa-linkedin {
+	color: white;
+}
+.fa-instagram {
+	color: white;
 }

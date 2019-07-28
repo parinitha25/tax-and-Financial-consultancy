@@ -8,14 +8,15 @@ class Ourclient extends Component {
     return (
       <div>
         <Navbar/>
-          <div className="row">
+        <div className="row">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
             <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-             <h1 className="expert"><i>Our Clients</i></h1>
-        <div className="row backgroundcolor">
+          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 appth">
+             <div className="'apptname"><i>Our Clients</i></div>
+             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        <div className="row backgroundcoloro">
           <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
               <img src={require('../images/logo2.png')} alt="Card" className="logoi"/>
               <p className="logop"><i>AICPA Tax Center</i></p>

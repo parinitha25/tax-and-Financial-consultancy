@@ -10,11 +10,12 @@ class Contact extends Component {
       <div>
         <Navbar/>
         <div className="row">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div className="backgroundc"></div>
-            <div className="contactpa"><i>Contact Us</i></div>
+            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 appth">
+             <div className='apptname'><i>Contactus</i></div>
+             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            </div>
           </div>
-        </div>
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div className="row">

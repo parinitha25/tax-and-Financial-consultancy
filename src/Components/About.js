@@ -65,10 +65,10 @@ class About extends Component {
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
         <div className="row">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h1 className="teamc"><i>Our Team</i></h1>
-        <CardGroup className="cardimgt">
+      <CardGroup className="cardimgt">
         <Card>
           <CardBody>
           <div class="dropdown">
@@ -77,10 +77,9 @@ class About extends Component {
             <p>CEO</p>
             <div class="dropdown-content">   
               <img src={require('../images/email1.png')} alt="Card" className="emaili" />
-              <label className="labeln">rossmen12@gmail.com</label>
+              <label className="labeln">ross@gmail.com</label><br/>
               <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
-              <label className="labelp">08048921603</label>
-              
+              <label className="labelp">+1(804)892-163</label>  
             </div>
           </div>
           </CardBody>
@@ -93,9 +92,9 @@ class About extends Component {
             <p>Business Reporter.</p>
             <div class="dropdown-content">
             <img src={require('../images/email1.png')} alt="Card" className="emaili" />
-              <label className="labeln">sarahd345@gmail.com</label>
+              <label className="labeln">sarahd@gmail.com</label><br/>
               <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
-              <label className="labelp">0804567891</label>
+              <label className="labelp">+1(804)567-899</label>
             </div>
           </div>
           </CardBody>
@@ -108,9 +107,9 @@ class About extends Component {
             <p>Advisor</p>
             <div class="dropdown-content">
             <img src={require('../images/email1.png')} alt="Card" className="emaili" />
-              <label className="labeln">kumar789@gmail.com</label>
+              <label className="labeln">kumar@gmail.com</label><br/>
               <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
-              <label className="labelp">0947393027</label>
+              <label className="labelp">+1(947)393-027</label>
             </div>
           </div>
           </CardBody>
@@ -123,9 +122,9 @@ class About extends Component {
             <p>Manager</p>
             <div class="dropdown-content">
             <img src={require('../images/email1.png')} alt="Card" className="emaili" />
-              <label className="labeln">jeffbezs456@gmail.com</label>
+              <label className="labeln">jeffbezs@gmail.com</label><br/>
               <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
-              <label className="labelp">0354830922</label>
+              <label className="labelp">+1(354)830-922</label>
             </div>
           </div>
           </CardBody>

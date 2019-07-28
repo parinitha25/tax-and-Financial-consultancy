@@ -1,26 +1,26 @@
 .backgroundc{
-    background-image: url('../../images/serviceb.jpg');
-    height: 300px;
-    width:100%;
-    background-size: cover;
-    margin-top: 100px;
+  background-image: url('../../images/serviceb.jpg');
+  height: 200px;
+  width:100%;
+  background-size: cover;
+  margin-top: 100px;
+  margin-left: 100px;
 }
 .custimg{
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .contactpa{
   margin-top:-300px;
   color: rgb(0, 140, 255);
   font-size: 100px;
   margin-left: 530px;
-  background-color: #ff0062;
 }
 .phoneimg{
-    width: 50px;
-    height: 50px;
-    margin-top: 50px;
-    margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
 }
 .cparagraph{
   margin-left: -30px;
@@ -29,22 +29,22 @@
   margin-left: -70px;
 }
 .phoneimga{
-    width: 50px;
-    height: 50px;
-    margin-top: 100px;
-    margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  margin-top: 100px;
+  margin-left: 10px;
 }
 .number{
-    margin-left: -40px;
-    margin-top: 60px;
+  margin-left: -40px;
+  margin-top: 60px;
 }
 .numbera{
-    margin-left: -40px;
-    margin-top: 130px;
+  margin-left: -40px;
+  margin-top: 130px;
 }
 .custp{
-    margin-top:30px;
-    text-align: left;
+  margin-top:30px;
+  text-align: left;
    
 }
 .custpa{
@@ -55,11 +55,11 @@
   font-size: 30px;
 }
 .taxfind{
-    margin-top: 180px;
-    margin-left:-20px;
-    color: #4c3ce2;
-    text-align: left;   
-    font-size: 50px; 
+  margin-top: 180px;
+  margin-left:-20px;
+  color: #1900fd;
+  text-align: left;   
+  font-size: 50px; 
 }
 .emailp{
   color: green;
@@ -72,20 +72,19 @@
   font-size: 30px;   
 }
 .addrp{
-margin-left: -20px;
-text-align: left;
-/* margin-right: 500px; */
+  margin-left: -20px;
+  text-align: left;
 }
 .country{
   font-size: 40px; 
- white-space: inherit;
+  white-space: inherit;
   margin-left: 100px;
   color:#8a5dd3;
 }
 .form{
   margin-top:180px;
   font-size: 50px;
-  color: #4c3ce2;
+  color: #1a01f7;
   margin-bottom: 50px;
 }
 .sendbt{
@@ -106,5 +105,4 @@ text-align: left;
   font-size: 30px;
   margin-left: -350px;
   margin-top: 50px;
- 
 }

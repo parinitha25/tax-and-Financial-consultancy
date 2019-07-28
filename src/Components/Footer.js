@@ -12,10 +12,10 @@ class Footer extends Component {
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.
 						</p>
-							{/* <a className='foot_a' href='#'><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-							<a className='foot_a' href='#'><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-							<a className='foot_a' href='#'><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-							<a className='foot_a' href='#'><i class="fa fa-youtube-square" aria-hidden="true"></i></a>  */}
+					  	<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-linkedin"></a>
+							<a href="#" class="fa fa-instagram"></a>
 						</div>
 						<div className="fdiv2">
 							<label className="aboutf">Quick Links</label><br/>
