@@ -11,10 +11,9 @@ class Appointment extends Component {
     super(props);
     this.state = {
       startDate: new Date()
-    };
-    this.handleChange = this.handleChange.bind(this);
+    }; 
   }
-  handleChange(date) {
+  handleChange=(date)=>{
     this.setState({
       startDate: date
     });
@@ -60,14 +59,15 @@ class Appointment extends Component {
                     dateFormat="h:mm aa"
                     timeCaption="Time"
                   />
-              </Form.Group>
-                <button  type="submit" className="sendbta">Send</button>
-                <button type="submit" className="resetbta">Reset</button>
+              </Form.Group>     
           </Form>
+          <a href='./sch'><input type="submit" value="send" className="sendbta"></input></a>
+          <button type="submit" className="resetbta">Reset</button>
         <Footer/>
       </div>
     );
   }
 }
 export default Appointment;
+
 

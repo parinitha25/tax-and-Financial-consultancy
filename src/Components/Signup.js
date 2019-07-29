@@ -74,14 +74,8 @@ class Signup extends Component {
       }
       if(t>4) {
           
-          this.props.history.push('/signin')    
+          this.props.history.push('/appt')    
       }
-      console.log(reqobj);
-      register(reqobj).then(res => {
-      })
-      .catch (res=> {
-          prompt(res)
-      })
   }  
   render() {
     const { firstname,lastname,email, password,phone } = this.state
@@ -116,7 +110,7 @@ class Signup extends Component {
             <Form.Group>
               <label><b>MobileNumber</b></label><br/>
               <input type="number" className="widthl" name="phone"  onChange={this.handleChange}  value={phone}/>
-              <p className="colorform">{this.state.phoneError}</p>/
+              <p className="colorform">{this.state.phoneError}</p>
               </Form.Group>
               <Button variant="primary" type="submit">Signup</Button>
           </Form>

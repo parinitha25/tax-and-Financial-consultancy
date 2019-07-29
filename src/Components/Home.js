@@ -26,26 +26,27 @@ class Home extends Component {
           <MDBView>
             <img className="d-block w-60 imga" src={require('../images/financial.jpg')} alt="First slide" />
             <h4 className="font">Our capital markets team, helping clients identify and invest in opportunities across all markets and asset classes.</h4><br />
-            <input type="submit" value="Make An Appointment" className="makes"></input>
+            <a href='./appt'><input type="submit" value="Make An Appointment" className="aptbs"></input></a>
           </MDBView>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="2">
           <MDBView>
             <img className="d-block w-60 imga" src={require('../images/download1.jpg')} alt="Second slide" />
             <h4 className="font">Our capital markets team, helping clients identify and invest in opportunities across all markets and asset classes.</h4><br />
-            <input type="submit" value="Make An Appointment" className="makes"></input>
+            <a href='./appt'><input type="submit" value="Make An Appointment" className="aptbs"></input></a>
           </MDBView>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3">
           <MDBView>
             <img className="d-block w-60 imga" src={require('../images/download4.jpeg')} alt="Third slide"/>
             <h4 className="font">Our capital markets team, helping clients identify and invest in opportunities across all markets and asset classes.</h4><br />
-            <a href='./appt'> <input type="submit" value="Make An Appointment" className="makes"></input></a>
+            <a href='./appt'><input type="submit" value="Make An Appointment" className="aptbs"></input></a>
           </MDBView>
         </MDBCarouselItem>
         </MDBCarouselInner>
         </MDBCarousel>
       </MDBContainer>
+     
       <p className="serviceo">Our Services</p>
       <CardGroup className="cfont">
         <Card>
@@ -71,7 +72,6 @@ class Home extends Component {
         </Card>
       </CardGroup>
       <div className="row">
-        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
           <div className="about">
 				    <div className="aboutt">
@@ -84,7 +84,7 @@ class Home extends Component {
                   5.Estate planning<br/>
                   6.Keeping clients compliant with their tax obligations  
 						    </p>
-					    <a href='./appt'><input type="submit" value="Make An Appointment" className="aptb"></input>  </a>
+					    <a href='./appt'><input type="submit" value="Make An Appointment" className="aptb"></input></a>
 				    </div>
 			    </div>
         </div>
@@ -92,55 +92,55 @@ class Home extends Component {
       <div className="row">
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
         <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-        <p className="service">Tax Calculator</p>
-      <div className="row">
-        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
-        <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-        <Form className="mtop">
-          <Form.Group>
-            <label><b>Choose your Business Area</b></label><br/>
-            <Form as="select">
-              <option>Ahmedabad</option>
-              <option>Busan	</option>
-              <option>Hiroshima</option>
-            </Form>
-          </Form.Group>
-          <Form.Group>
-            <label><b>Employees number</b></label><br/>
-            <Form as="select">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </Form>
-          </Form.Group>
-        </Form>
-        </div>
-        <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-        <Form className="mtopa">
-          <Form.Group>
-            <label className="formc"><b>Country of residence</b></label><br/>
-            <Form as="select">
-              <option>India</option>
-              <option>South Korea</option>
-              <option>Japan</option>
-            </Form>
-          </Form.Group>
-          <Form.Group>
-              <label><b>Yearly Income</b></label><br/>
-              <input type="text"  />
-          </Form.Group>
-              <Button variant="primary" type="submit" className="tbutton">Total payment </Button>
-          </Form>
-        </div>
-        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-        </div>
-        </div>
-          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
-            <img src={require('../images/calculator.jpg')} className="imgc" alt="calculator" />
+          <p className="service">Tax Calculator</p>
+          <div className="row">
+            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
+            <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
+              <Form className="mtop">
+                <Form.Group>
+                  <label><b>Choose your Business Area</b></label><br/>
+                  <Form as="select">
+                    <option>Ahmedabad</option>
+                    <option>Busan	</option>
+                    <option>Hiroshima</option>
+                  </Form>
+                </Form.Group>
+                <Form.Group>
+                  <label><b>Employees number</b></label><br/>
+                  <Form as="select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </Form>
+                </Form.Group>
+              </Form>
+            </div>
+            <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
+              <Form className="mtopa">
+                <Form.Group>
+                  <label className="formc"><b>Country of residence</b></label><br/>
+                  <Form as="select">
+                    <option>India</option>
+                    <option>South Korea</option>
+                    <option>Japan</option>
+                  </Form>
+                </Form.Group>
+                <Form.Group>
+                    <label><b>Yearly Income</b></label><br/>
+                    <input type="text"  />
+                </Form.Group>
+                  <Button variant="primary" type="submit" className="tbutton">Total payment </Button>
+              </Form>
+            </div>
+            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           </div>
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
+        </div>
+        <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
+          <img src={require('../images/calculator.jpg')} className="imgc" alt="calculator" />
+        </div>
+        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
       </div>
-          <p className="serviceo">Latest News</p>
+      <p className="serviceo">Latest News</p>
       <CardGroup className="cfont">
         <Card>
           <CardBody>

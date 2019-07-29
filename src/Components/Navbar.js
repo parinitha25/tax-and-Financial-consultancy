@@ -30,18 +30,13 @@ class Navbar extends Component {
           <li class="nav-item">
             <a class="nav-link" href="./contact">ContactUs</a>
           </li>
-          <li class="nav-item">
-          <div class="dropdown">
-          <img src={require('../images/searchi.png')} alt="search" className="searchia"/>
-          <div class="dropdown-content">
-          <input type="text" className="searchi"></input>
-          </div>
-          </div>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link logout" href="./signup">Logout</a>
-          </li>
           </ul>
+          <div className='search_box1'>
+            <input className='search_txt1' type="text" placeholder='Type to search'></input>
+            <a className="search_btn1" href="#"><i className="fa fa-search"></i></a>
+          </div> 
+          <a class="nav-link logout" href="./signin">Login</a>
+          <a class="nav-link logout" href="./signup">Logout</a>
         </div>
         </nav>
       </div>
@@ -50,3 +45,5 @@ class Navbar extends Component {
 }
 
 export default Navbar;
+
+

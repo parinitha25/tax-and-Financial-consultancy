@@ -5,7 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
-// import mobiscroll from '@mobiscroll/react-lite';
+
+// import App from './App';
+// import * as serviceWorker from './serviceWorker';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -13,3 +16,8 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
+
+
+
