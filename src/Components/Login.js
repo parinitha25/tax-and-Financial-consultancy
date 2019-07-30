@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import {login} from '../Action/LoginAction';
-// import {register} from '../Action/Register';
 import logot from '../logot.svg';
 import {Form,Button } from 'react-bootstrap';
 import './CSS/Login.css';

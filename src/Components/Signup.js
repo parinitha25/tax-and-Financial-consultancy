@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import logot from '../logot.svg';
 import {Form,Button } from 'react-bootstrap';
 import '../App.css';
-import {register} from './Userindex';
-
 
 class Signup extends Component {
   constructor(props){
@@ -73,7 +71,6 @@ class Signup extends Component {
           this.setState({phoneError:''});
       }
       if(t>4) {
-          
           this.props.history.push('/appt')    
       }
   }  

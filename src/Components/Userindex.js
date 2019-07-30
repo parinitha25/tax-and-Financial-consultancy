@@ -28,3 +28,16 @@ export const login = user => {
       console.log(err)
     })
 }
+export const appointment = user => {
+  return axios
+    .post('/appt', {
+      Email: user.Email,
+      Name: user.Name
+    })
+    .then(res => {
+      console.log('login sucessfully')
+    })
+    .catch(err => {
+      console.log(err)
+    })
+}

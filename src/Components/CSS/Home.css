@@ -113,14 +113,14 @@ select{
   margin-left: 40px;
 }  
 .aboutt{
-  position: absolute;
-  margin-top: 70px;
+  position: relative;
+  margin-top: 10%;
   color: rgba(255, 255, 255, 0.9);
   padding: 50px;
   left: 560px;
   right: 350px;
-  height: 500px;
-  width: 550px;
+  height: 70%;
+  width: 36%;
   font-size: 1.1rem;
   background-color: #e81050;
   margin-bottom: 1.5rem;
@@ -134,9 +134,9 @@ select{
   color: #61dafb
 }
 .aptb{
-  position: absolute; 
+  position: relative; 
   border-radius: 0px;
-  left: 170px; 
+  left: 10%; 
   height: 50px;
   font-weight: bold;
   color:#4c3ce2;
