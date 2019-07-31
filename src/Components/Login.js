@@ -38,7 +38,7 @@ handleSubmit=(e)=>{
           this.setState({passwordError:''});
       }
       if(t>1) {   
-        this.props.history.push('/home')    
+        // this.props.history.push('/home')    
     }
     console.log(reqobj);
     login(reqobj).then(res => {
@@ -46,6 +46,19 @@ handleSubmit=(e)=>{
     .catch (res=> {
         prompt(res)
     })
+}
+handleSignin=async()=>{
+        
+  const { email,password} = this.state;
+  const payload = { email,password }
+  await login(payload).then(res => {
+      if(res.data==="User succesfully signIn"){
+          alert("login succesfull")
+          this.props.history.push('/home')
+      }
+      else
+          alert("login fail");
+  })
 }
   render() {
     const { email, password } = this.state
@@ -67,7 +80,7 @@ handleSubmit=(e)=>{
                 <input type="text" className="widthl" onChange={this.handleChange} name="password" value={password}/>
                 <p className="colorform">{this.state.passwordError}</p>
               </Form.Group>
-                <Button variant="primary" type="submit">Login</Button>
+                <Button variant="primary" type="submit" onSubmit={this.handleSignin}>Login</Button>
             </Form>
             </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
@@ -80,3 +93,16 @@ handleSubmit=(e)=>{
 export default Login;
 
 
+// handleSignin=async()=>{
+        
+//   const { email,password} = this.state;
+//   const payload = { email,password }
+//   await api.signin(payload).then(res => {
+//       if(res.data==="User succesfully signIn"){
+//           alert("login succesfull")
+//           browserHistory.push("home");
+//       }
+//       else
+//           alert("login fail");
+//   })
+// }

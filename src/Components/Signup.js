@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logot from '../logot.svg';
 import {Form,Button } from 'react-bootstrap';
 import '../App.css';
+import {register} from './Userindex';
 
 class Signup extends Component {
   constructor(props){
@@ -23,12 +24,12 @@ class Signup extends Component {
       this.setState({[e.target.name]:e.target.value});
   }
   handleSubmit=(e)=>{
-    debugger
+    // debugger
       e.preventDefault();
       let t=0;
       let reqobj={
-          Firstname:this.state.firstname,
-          Lastname:this.state.lastname,
+          FirstName:this.state.firstname,
+          LastName:this.state.lastname,
           Email:this.state.email,
           Password:this.state.password,
           Phone:this.state.phone
@@ -73,6 +74,12 @@ class Signup extends Component {
       if(t>4) {
           this.props.history.push('/appt')    
       }
+      console.log(reqobj);
+    register(reqobj).then(res => {
+    })
+    .catch (res=> {
+        prompt(res)
+    })
   }  
   render() {
     const { firstname,lastname,email, password,phone } = this.state

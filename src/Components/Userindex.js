@@ -3,8 +3,8 @@ import axios from 'axios'
 export const register = newUser => {
   return axios
     .post('/signup', {
-      Firstname:newUser.Firstname,
-      Lastname:newUser.Lastname,
+      FirstName:newUser.FirstName,
+      LastName:newUser.LastName,
       Email: newUser.Email,
       Password: newUser.Password,
       Phone: newUser.Phone,
@@ -31,11 +31,14 @@ export const login = user => {
 export const appointment = user => {
   return axios
     .post('/appt', {
-      Email: user.Email,
-      Name: user.Name
+      email: user.email,
+      name: user.name,
+      date:user.date,
+      time:user.time
+
     })
     .then(res => {
-      console.log('login sucessfully')
+      console.log('Appointment sucessfully')
     })
     .catch(err => {
       console.log(err)

@@ -2,19 +2,22 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 class Schedule extends Component {
-    state = { users:[]}
+    state = { users:[]
+    }
     componentDidMount(){
         axios.get('http://localhost:8000/appt')
         .then(res => {
-            this.setState({users: res.data});
+            this.setState({users:res.data});
             console.log(this.state.users);
         });
     }
     render() {
         return (
             <div>
-                <p>Schedule</p>
-                <p>{this.state.users}</p>   
+                <p>Schedule</p> 
+                <div>
+                 {this.state.users.map(user =><div> <p>name:{user.name}</p><p>email:{user.email}</p><p>time{user.time}</p><p>date:{user.date}</p></div>)}
+                </div>
             </div>
         );
     }

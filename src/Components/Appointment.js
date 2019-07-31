@@ -13,53 +13,57 @@ class Appointment extends Component {
     this.state = {
       startDate: new Date(),
       namel:'',
-      email:''
+      email:'',
+      time:''
     }; 
   }
   handleChange=(date)=>{
     this.setState({
-      startDate: date
+      startDate: date,
+     
     });
   }
   handleChangeg=(e)=>{
     this.setState({[e.target.name]:e.target.value});
   }
   handleSubmitg=(e)=>{
+    debugger
     e.preventDefault();
     let t=0;
     let reqobj={
-      Email:this.state.email,
-      Name:this.state.namel
+      email:this.state.email,
+      name:this.state.namel,
+      date:this.state.startDate,
+      time:this.state.time
     }
+    console.log(this.state);
     let reg_user=/^[A-Za-z0-9]{2,10}$/;
     let reg_email=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if(!this.state.namel) this.setState({namelError:'Name is required'});
     else if(!reg_user.test(this.state.namel)) this.setState({namelError:'Invalid name'});
     else{
-         t++;
-         this.setState({namelError:''});
-    }
-       
+        t++;
+        this.setState({namelError:''});
+    }   
     if(!this.state.email) this.setState({emailError:'Email is required'});
     else if(!reg_email.test(this.state.email)) this.setState({emailError:'Invalid Email'}); 
     else {
-        t++;
-        this.setState({emailError:''});
+      t++;
+      this.setState({emailError:''});
     }
     if(t>1) {   
       this.props.history.push('/sch')    
-  }
-
-console.log(reqobj);
-appointment(reqobj).then(res => {
-  })
-  .catch (res=> {
-      prompt(res)
-  })
-}
+    } 
+    console.log(reqobj);
+      appointment(reqobj).then(res => {
+      })
+      .catch (res=> {
+        prompt(res)
+      })
+  }    
 
   render() {
-    const { email, namel} = this.state
+    const { email, namel,date,time} = this.state
       return (
       <div>
         <Navbar/>
@@ -85,28 +89,27 @@ appointment(reqobj).then(res => {
             <Form.Group>
             <div>
               <label className="datet"><b>Date</b></label>
-                <DatePicker className="dateta"
+              <DatePicker
                   selected={this.state.startDate}
                   onChange={this.handleChange}
-                />
+              />
             </div>
             </Form.Group>
             <Form.Group >
               <label className="datet"><b>Time</b></label>
-                  <DatePicker className="dateta"
-                    selected={this.state.startDate}
-                    onChange={this.handleChange}
-                    showTimeSelect
-                    showTimeSelectOnly
-                    timeIntervals={15}
-                    dateFormat="h:mm aa"
-                    timeCaption="Time"
-                  />
+              <DatePicker
+                  selected={this.state.startDate}
+                  onChange={this.handleChange}
+                  showTimeSelect
+                  showTimeSelectOnly
+                  timeIntervals={15}
+                  dateFormat="h:mm aa"
+                  timeCaption="Time"
+              />
               </Form.Group>   
               <input type="submit" value="send" className="sendbta"></input>
           <button type="submit" className="resetbta">Reset</button>  
           </Form>
-         
         <Footer/>
       </div>
     );

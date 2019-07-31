@@ -144,7 +144,7 @@ class Home extends Component {
                           <input type="text"  name="income" onChange={this.handleChanget}/>
                           <p>{this.state.total}</p>
                       </Form.Group>
-                      <Button variant="primary" type="submit" className="tbutton" onClick= {this.handleSubmitt}>Total payment</Button>
+                      <Button variant="primary" type="button" className="tbutton" onClick= {this.handleSubmitt}>Total payment</Button>
                     </Form>
                   </div>
                   <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
