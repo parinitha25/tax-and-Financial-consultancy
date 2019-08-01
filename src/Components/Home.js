@@ -141,8 +141,8 @@ class Home extends Component {
                       </Form.Group>
                       <Form.Group>
                           <label><b>Yearly Income</b></label><br/>
-                          <input type="text"  name="income" onChange={this.handleChanget}/>
-                          <p>{this.state.total}</p>
+                          <input type="number"  name="income" onChange={this.handleChanget}/>
+                          <input   className="result" value={this.state.total}/>  
                       </Form.Group>
                       <Button variant="primary" type="button" className="tbutton" onClick= {this.handleSubmitt}>Total payment</Button>
                     </Form>
@@ -180,7 +180,7 @@ class Home extends Component {
                 </Card>
               </CardGroup>
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
-            {/* <Footer/> */}
+            <Footer/>
       </div>
     );
   }

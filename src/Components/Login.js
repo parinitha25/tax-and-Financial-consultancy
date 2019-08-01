@@ -48,13 +48,14 @@ handleSubmit=(e)=>{
     })
 }
 handleSignin=async()=>{
-        
+    debugger    
   const { email,password} = this.state;
   const payload = { email,password }
   await login(payload).then(res => {
-      if(res.data==="User succesfully signIn"){
+    console.log(res,"uhbjhnuhj")
+      if(res==="User succesfully signIn"){
           alert("login succesfull")
-          this.props.history.push('/home')
+          this.props.history.push('/home')   
       }
       else
           alert("login fail");
@@ -80,7 +81,7 @@ handleSignin=async()=>{
                 <input type="text" className="widthl" onChange={this.handleChange} name="password" value={password}/>
                 <p className="colorform">{this.state.passwordError}</p>
               </Form.Group>
-                <Button variant="primary" type="submit" onSubmit={this.handleSignin}>Login</Button>
+                <Button variant="primary" type="submit" onClick={this.handleSignin}>Login</Button>
             </Form>
             </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>

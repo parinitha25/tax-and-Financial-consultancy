@@ -13,8 +13,8 @@ class Appointment extends Component {
     this.state = {
       startDate: new Date(),
       namel:'',
-      email:'',
-      time:''
+      email:''
+     
     }; 
   }
   handleChange=(date)=>{
@@ -34,7 +34,7 @@ class Appointment extends Component {
       email:this.state.email,
       name:this.state.namel,
       date:this.state.startDate,
-      time:this.state.time
+      time:this.state.startDate
     }
     console.log(this.state);
     let reg_user=/^[A-Za-z0-9]{2,10}$/;
@@ -87,13 +87,12 @@ class Appointment extends Component {
               <p className="colorform">{this.state.emailError}</p>
             </Form.Group>
             <Form.Group>
-            <div>
               <label className="datet"><b>Date</b></label>
               <DatePicker
                   selected={this.state.startDate}
                   onChange={this.handleChange}
+                  className="widthd"
               />
-            </div>
             </Form.Group>
             <Form.Group >
               <label className="datet"><b>Time</b></label>
@@ -105,6 +104,7 @@ class Appointment extends Component {
                   timeIntervals={15}
                   dateFormat="h:mm aa"
                   timeCaption="Time"
+                  className="widthd"
               />
               </Form.Group>   
               <input type="submit" value="send" className="sendbta"></input>

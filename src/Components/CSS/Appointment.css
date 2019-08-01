@@ -5,6 +5,10 @@
   border-right: 0px;
   margin-left: 18px;
 }
+.widthd{
+  margin-left: 20px;
+  width:160px;
+}
 .appth{
   background: url('../../images/serviceb.jpg');
   border:solid 1px white;
@@ -53,7 +57,7 @@
   margin-left: 100px;
 }
 .datet{
-  margin-left: 100px;
+  margin-left: 60px;
 }
 .dateta{
   margin-left: 30px;
