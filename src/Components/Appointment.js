@@ -106,9 +106,9 @@ class Appointment extends Component {
                   timeCaption="Time"
                   className="widthd"
               />
-              </Form.Group>   
+            </Form.Group>   
               <input type="submit" value="send" className="sendbta"></input>
-          <button type="submit" className="resetbta">Reset</button>  
+              <button type="submit" className="resetbta">Reset</button>  
           </Form>
         <Footer/>
       </div>
