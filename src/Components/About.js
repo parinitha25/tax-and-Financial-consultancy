@@ -9,53 +9,53 @@ class About extends Component {
     return (
       <div>
         <Navbar/>
-        <div className="row">
-          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div className="backgrounda"></div>
+          <div className="row"> 
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 backgrounda">
+              <div className='aboutname'><i>About Us</i></div>
+            </div> 
           </div>
-          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
-        </div>
-        <div className="row">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-            <h1 className="taxs"><i>What is TAX?</i></h1><br/>
-            <p><i>A tax is a compulsory financial charge or some other type of levy imposed upon a taxpayer by a governmental organization in order to fund various public expenditures.A failure to pay,
-                along with evasion of or resistance to taxation, is punishable by law. Taxes consist of direct or indirect taxes and may be paid in money or as its labour equivalent.</i></p>
-            <p><i>Most countries have a tax system in place to pay for public, common or agreed national needs and government functions. Some levy a flat percentage rate of taxation 
-                  on personal annual income, but most scale taxes based on annual income amounts. </i></p>
+          <div className="row">
+            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+              <p className="taxs">What is TAX?</p><br/>
+              <p className="taxp">Tax is a dynamic and fast paced industry which requires not only analytical ability, but excellent problem solving and commercial skills. For everything that has economic consequences, whether it is for a company, an individual or the Government - tax is relevant, as is the need for tax advisers.</p>
+              <p className="taxp">The complex and diverse nature of taxation means that tax advisers rapidly develop areas of specialist knowledge.</p>
+              <input type="submit" value="Read More" className="readb"></input>
+            </div>
+            <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+              <img src={require('../images/taxa.jpg')} className="taximga" alt="calculator" />  
+            </div>  
+            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           </div>
-          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-            <img src={require('../images/tax5.jpeg')} className="taximg" alt="calculator" />
-            <input type="submit" value="Read More" className="readb"></input>
-          </div>  
+          <div className="row">
+              <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+              <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
+                <img  src={require('../images/benifitsa.jpg')} alt="Card" className="bimg" />
+          <div className="row">
+              <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+              <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+              <div className="box bg-cello aboutt benifit">
+                <h1 className="benifita">Our Benifits</h1>
+                <p className="benifitp"><h3>1.Competency</h3>
+                We keep abreast of relevant trends and changes in accounting treatment, tax law, and financial management. </p>
+                <p><h3>2.Professionalism</h3>
+                We treat each client with dignity and respect. We listen attentively to their goals and needs.</p>
+                <p><h3>3.Commitment</h3>
+                Our relationships with clients extend beyond financial recordkeeping and reporting.</p>  
+              </div>
+              </div>
+              <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6"></div>  
+            </div>
+              </div>
+              <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>   
+          </div> 
+         <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-        </div>
-        <div className="row">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
-          <img  src={require('../images/benifitsa.jpg')} alt="Card" className="bimg" />
-        <div className="row">
-          <div className="col-xs-7 col-sm-7 col-md-7 col-lg-7"></div>
-          <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 benifit"> 
-            <h1 className="benifita">Benifits</h1>
-            <p><h3>1.Nature of income</h3>
-              The income received from consultancy is classified as income from profits and gains of business or profession, whereas in case of employment, it is considered as salary income. </p>
-            <p><h3>2.Advance tax</h3>
-            In case of a salaried employee, income tax is calculated and deducted by the employer every month as per the tax rate applicable to the employee. When it comes to consultancy, compensation payment is received post-TDS, which is at a flat rate of 10 per cent from consultancy fee.</p> 
-          </div>
-        </div>
-           </div>
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>   
-        </div>
-        <div className="row">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <h1 className="paragraph"><i>Why US?</i></h1><br/>
-            <p><i>Tax consultants, also know as tax advisors, are experts in tax law, planning and compliance. They serve businesses and individuals alike by staying current on new tax law and positioning taxpayers for short and long term tax optimization. A tax consultant typically expands on the role of tax preparer. While tax consultants prepare tax returns, they also often 
-              work closely with clients throughout the year to ensure client tax liability is minimized. 
-              Tax consultants are strong written and verbal communicators able to explain tax law and strategies in a way that is accessible and easy for clients to understand. Tax consultants work for public accounting firms, law offices, financial consulting firms and many even have their own independent tax preparation and consultation businesses. In all settings, tax consultants can be expected to perform duties that include:</i><br></br>
-                  <p className="p1">1.Conducting research on tax laws<br/>
+          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 backgroundw">
+          <p className="paragraph"><i>Why US?</i></p><br/>
+              <p className="benifitp2">Using a tax advisor to manage your taxation affairs can be very rewarding. Professionals are much more likely to be aware of more of the ways in which your taxes can be optimised so that you pay the least possible amount.<br></br>
+                <p className="p1">
+                  1.Conducting research on tax laws<br/>
                   2.Strategizing with clients to minimize tax liability<br/>
                   3.Communicating with clients to explain tax issues<br/>
                   4.Preparing tax returns<br/>
@@ -63,87 +63,87 @@ class About extends Component {
                   6.Keeping clients compliant with their tax obligations</p></p>
           </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        </div> 
+        <div className="row"> 
+            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+              <h1 className="teamc"><i>Our Team</i></h1>
+              <CardGroup>
+                <Card>
+                  <CardBody>
+                  <div class="dropdown">
+                    <img src={require('../images/expert3.jpg')} alt="Card" className="tmimg" />
+                      <p>Ross McEwan</p>
+                      <p>CEO</p>
+                    <div class="dropdown-content">   
+                      <img src={require('../images/email1.png')} alt="Card" className="emaili" />
+                      <label className="labeln">ross@gmail.com</label><br/>
+                      <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
+                      <label className="labelp">+1(804)892-163</label>  
+                    </div>
+                  </div>
+                  </CardBody>
+                </Card>
+                <Card>     
+                  <CardBody>
+                  <div class="dropdown">
+                    <img  src={require('../images/expert4.jpg')} alt="Card" className="tmimg" />
+                    <p>Sarah Danckert</p>
+                    <p>Business Reporter.</p>
+                    <div class="dropdown-content">
+                    <img src={require('../images/email1.png')} alt="Card" className="emaili" />
+                      <label className="labeln">sarahd@gmail.com</label><br/>
+                      <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
+                      <label className="labelp">+1(804)567-899</label>
+                    </div>
+                  </div>
+                  </CardBody>
+                </Card>
+                <Card>
+                  <CardBody>
+                  <div class="dropdown">
+                    <img  src={require('../images/expert2.jpg')} alt="Card"  className="tmimg"/>
+                    <p>Kumar Birla</p>
+                    <p>Advisor</p>
+                    <div class="dropdown-content">
+                    <img src={require('../images/email1.png')} alt="Card" className="emaili" />
+                      <label className="labeln">kumar@gmail.com</label><br/>
+                      <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
+                      <label className="labelp">+1(947)393-027</label>
+                    </div>
+                  </div>
+                  </CardBody>
+                </Card>
+                <Card>
+                  <CardBody>
+                  <div class="dropdown">
+                    <img  src={require('../images/expert1.png')} alt="Card"  className="tmimg"/>
+                    <p>Jeff Bezos</p>
+                    <p>Manager</p>
+                    <div class="dropdown-content">
+                    <img src={require('../images/email1.png')} alt="Card" className="emaili" />
+                      <label className="labeln">jeffbezs@gmail.com</label><br/>
+                      <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
+                      <label className="labelp">+1(354)830-922</label>
+                    </div>
+                  </div>
+                  </CardBody>
+                </Card>
+              </CardGroup>
+            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+          </div>
         </div>
-        <div className="row">
-          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h1 className="teamc"><i>Our Team</i></h1>
-      <CardGroup className="cardimgt">
-        <Card>
-          <CardBody>
-          <div class="dropdown">
-            <img src={require('../images/expert3.jpg')} alt="Card" className="tmimg" />
-            <p>Ross McEwan</p>
-            <p>CEO</p>
-            <div class="dropdown-content">   
-              <img src={require('../images/email1.png')} alt="Card" className="emaili" />
-              <label className="labeln">ross@gmail.com</label><br/>
-              <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
-              <label className="labelp">+1(804)892-163</label>  
-            </div>
-          </div>
-          </CardBody>
-        </Card>
-        <Card>     
-          <CardBody>
-          <div class="dropdown">
-            <img  src={require('../images/expert4.jpg')} alt="Card" className="tmimg" />
-            <p>Sarah Danckert</p>
-            <p>Business Reporter.</p>
-            <div class="dropdown-content">
-            <img src={require('../images/email1.png')} alt="Card" className="emaili" />
-              <label className="labeln">sarahd@gmail.com</label><br/>
-              <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
-              <label className="labelp">+1(804)567-899</label>
-            </div>
-          </div>
-          </CardBody>
-        </Card>
-        <Card>
-          <CardBody>
-          <div class="dropdown">
-            <img  src={require('../images/expert2.jpg')} alt="Card"  className="tmimg"/>
-            <p>Kumar Birla</p>
-            <p>Advisor</p>
-            <div class="dropdown-content">
-            <img src={require('../images/email1.png')} alt="Card" className="emaili" />
-              <label className="labeln">kumar@gmail.com</label><br/>
-              <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
-              <label className="labelp">+1(947)393-027</label>
-            </div>
-          </div>
-          </CardBody>
-        </Card>
-        <Card>
-          <CardBody>
-          <div class="dropdown">
-            <img  src={require('../images/expert1.png')} alt="Card"  className="tmimg"/>
-            <p>Jeff Bezos</p>
-            <p>Manager</p>
-            <div class="dropdown-content">
-            <img src={require('../images/email1.png')} alt="Card" className="emaili" />
-              <label className="labeln">jeffbezs@gmail.com</label><br/>
-              <img src={require('../images/phone1.jpg')} alt="Card" className="phonei" />
-              <label className="labelp">+1(354)830-922</label>
-            </div>
-          </div>
-          </CardBody>
-        </Card>
-      </CardGroup>
-      </div>
-      </div>
-      <div className="row backendp">
+        <div className="row backendp">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <p className="peoplep"><i>“What People Say”</i></p>
-      <div className="row">
+            <p className="peoplep"><i>“What People Say”</i></p>
+        <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
             <div className="peoplep1">
               <p>Team professional team</p>
               <p>Taxexpert field my tax for this year.They were very complicated as compared to any other due 
-                to a host of reasons.They handled my tax return very professionally and accrately.I am pleased
-                to recommend Taxexpert.</p>
+                to a host of reasons.They handled my tax return very professionally and accrately.</p>
             </div><br/>
               <img className="imgp" src={require('../images/clients1.jpg')} alt="First slide" />
               <p className="colorwp2">Aahna
@@ -156,8 +156,8 @@ class About extends Component {
               <img className="imgp" src={require('../images/clients4.jpg')} alt="First slide" />
               <p className="colorwp2">Aadita
               <p className="colorwp">Coordinator</p></p>  
-          </div>
-           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            </div>
+            <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
             <div className="peoplep1">
               <p>Financial Planner</p>
               <p>Every individual who wants to meet short and long term financial goals, needs a Financial Planner.
@@ -166,23 +166,21 @@ class About extends Component {
               <img className="imgp" src={require('../images/clients6.jpg')} alt="First slide" />
               <p className="colorwp2">Kumar Birla
               <p className="colorwp">Manager</p></p>
-         
             <div className="peoplep1">
               <p>Benefits tax and financial</p>
               <p>They determine your current financial situation with regard to income, savings, living expenses, debts and also help in mitigating risks associated with your investments.
-              They handled my tax return very professionally and accrately.
               </p>
             </div><br/>  
               <img className="imgp" src={require('../images/clients3.jpg')} alt="First slide" />
               <p className="colorwp2">Aaditya
               <p className="colorwp">CEO</p></p>
+            </div>
+            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           </div>
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-      </div>
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-      </div>
-      <Footer/>
-      </div>
+      {/* <Footer/> */}
+      </div>  
       </div>
     );
   }

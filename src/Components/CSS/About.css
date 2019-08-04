@@ -1,9 +1,16 @@
 .backgrounda{
-  background-image: url('../../images/aboutus.jpg');
+  background-image: url('../../images/aboutusa.jpg');
   height: 300px;
-  width:100%;
   background-size: cover;
   margin-top: 100px;
+}
+.aboutname {
+  padding: 5%;
+  color: rgb(0, 131, 238);
+  font-size: 80px;
+  font-weight: bold;
+  -webkit-text-stroke: 2px white;
+  height: 100px;
 }
 .peoplep{
   margin-top:40px;
@@ -12,6 +19,7 @@
   margin-bottom: 100px;
   color: #e23cd4;  
 }
+
 .peoplepa{
   text-align: left;
   margin-left: -50px;
@@ -24,35 +32,36 @@
   margin-left: 350px;
   margin-top:-223px;
   margin-right: 200px;
-  /* background-color:#b0ade4; */
   width: 260px;
   font-size: 50px;
   color: #e23cd4;
 }
 .taxs{
   margin-top: 150px;
-  margin-left: 30px;
-  color: #e23cd4
+  font-size: 40px;
+  line-height: .88889;
+  color: #ff5405;
 }
 .readb{
-  position: absolute; 
-  top: 550px; 
-  left: -300px; 
+  top: 100%; 
+  text-align: center;
   height: 50px;
   border:none;
   border-color: rgb(193, 224, 252);
-  background-color: #0a0911;
+  background-color: #15f585;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   width: 200px;
-  color: rgb(12, 248, 146);    
 }
-.taximg{
+.taxp{
+  font-size: 20px;
+  text-align: left;
+}
+.taximga{
   margin-top: 150px;
-  width: 530px;
-  height: 350px;
-  margin-right: -100px;
+  width: 120%;
+  height: 70%;
 }
 .bimg{
   margin-top: 200px;
@@ -65,25 +74,42 @@
   margin-top:900px;
   background-size: cover;
 }
+.backgroundw{
+  background-image: url('../../images/whyus.jpg');
+  opacity:0.9;
+  z-index: 1;
+  width:100%;
+  margin-top:10%;
+  background-size: cover;
+}
 .benifit{
-  margin-left: 30px;
-  margin-top:-518px;
-  margin-right: 100px;
-  background-color:#7470b2;
-  margin-bottom: 300px;
+  margin-top:-150%;
+}
+.benifitp{
+  margin-top:50px;
 }
 .benifita{
   color: #e23cd4; 
 }
+.benifitp2{
+  font-size: 22px;
+  color: black;
+  z-index: 2;
+  opacity: 2.5;
+  font-weight: bold;
+  
+}
 .p1{
-  margin-left: 300px;
   text-align: left;
   margin-top: 20px;
+  font-weight: bold;
 }
 .paragraph{
   margin-top:50px;
   margin-left: 30px;
-  color: #e23cd4;
+  color:black;
+  font-size: 50px; 
+  font-weight: bold;
 }
 .tmimg{
   width: 200px;
