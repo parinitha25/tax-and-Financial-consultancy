@@ -165,9 +165,25 @@ select{
 .result{
   margin-right: 204px;
   margin-left: -118px;
-  margin-top: 22px;
+  margin-top: 32px;
   border-top:0px;
   border-left: 0px;
   border-right: 0px;
   text-align: center;
+}
+.mtopa{
+  margin-top: 30px;
+}
+
+.karthi{
+  display: inline-block;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+.row1{
+  display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: -15px;
 }

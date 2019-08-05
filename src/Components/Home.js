@@ -29,10 +29,10 @@ class Home extends Component {
     return (
       <div>
         <Navbar/>  
-        <div className="row">
+        <div className="row1">
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
             <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 " >
-                <MDBCarousel
+                <MDBCarousel className="karthi"
                   activeItem={1}
                   length={2}
                   showControls={true}
@@ -55,11 +55,11 @@ class Home extends Component {
                 </MDBCarouselItem>
                 </MDBCarouselInner>
                 </MDBCarousel>
-             </div>
+              </div>
              <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
           </div>
             <p className="serviceo">Our Services</p>
-          <div className="row">
+          <div className="row1">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
               <CardGroup>
@@ -88,10 +88,10 @@ class Home extends Component {
                 </div>
                 <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
               </div>
-          <div className="row">
+          <div className="row1">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
               <div className="about"></div>
-              <div className="row">
+              <div className="row1">
               <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6"></div>
               <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 <div className="box bg-cello aboutt">
@@ -109,12 +109,11 @@ class Home extends Component {
              </div>
             </div>
           </div>
-           <div className="row">
+           <div className="row1">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
             <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
               <p className="service">Tax Calculator</p>
-                <div className="row">
-                  
+                <div className="row"> 
                   <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
                     <Form className="mtop">
                       <Form.Group>
@@ -135,10 +134,10 @@ class Home extends Component {
                     </Form>
                   </div>
                   <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                    <Form className="mtopa">
+                    <Form>
                       <Form.Group>
                         <label className="formc"><b>Country of residence</b></label><br/>
-                        <Form as="select">
+                        <Form as="select" className="mtopa">
                           <option>India</option>
                           <option>South Korea</option>
                           <option>Japan</option>
@@ -147,7 +146,7 @@ class Home extends Component {
                       <Form.Group>
                           <label><b>Yearly Income</b></label><br/>
                           <input type="number" className="resultv" name="income" onChange={this.handleChanget}/>
-                          <input   className="result" value={this.state.total}/>  
+                          <input className="result" value={this.state.total}/>  
                       </Form.Group>
                       <Button variant="primary" type="button" className="tbutton" onClick= {this.handleSubmitt}>Total payment</Button>
                     </Form>
@@ -161,7 +160,7 @@ class Home extends Component {
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
           </div>
              <p className="serviceo">Latest News</p>
-             <div className="row">
+             <div className="row1">
              <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
              <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
               <CardGroup className="cfont">

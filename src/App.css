@@ -228,3 +228,6 @@ select{
 .search_txt1:focus >.search_box1 {
   width: 240px;
 }
+.row {
+  margin-right:1px;
+}

@@ -9,12 +9,12 @@ class About extends Component {
     return (
       <div>
         <Navbar/>
-          <div className="row"> 
+          <div className="row1"> 
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 backgrounda">
               <div className='aboutname'><i>About Us</i></div>
             </div> 
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
               <p className="taxs">What is TAX?</p><br/>
@@ -178,9 +178,9 @@ class About extends Component {
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          </div>
+          </div> */}
       {/* <Footer/> */}
-      </div>  
+      {/* </div>   */}
       </div>
     );
   }
