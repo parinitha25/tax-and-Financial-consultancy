@@ -32,7 +32,7 @@ class Home extends Component {
         <div className="row1">
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
             <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 " >
-                <MDBCarousel className="karthi"
+                <MDBCarousel 
                   activeItem={1}
                   length={2}
                   showControls={true}
@@ -93,7 +93,7 @@ class Home extends Component {
               <div className="about"></div>
               <div className="row1">
               <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6"></div>
-              <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                 <div className="box bg-cello aboutt">
                   <span className="aboutus"><i>About Us</i></span>
                     <p className="aboutp1">We are dedicated to providing professional service with the highest degree of honesty and integrity, and strive to add value to our tax and consulting services.</p>
@@ -105,7 +105,7 @@ class Home extends Component {
                   <a href='./appt'><input type="submit" value="MAKE AN APPOINTMENT >" className="aptb"></input></a>
                 </div>
                 </div>
-                <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
              </div>
             </div>
           </div>

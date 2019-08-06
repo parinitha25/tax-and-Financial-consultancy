@@ -14,7 +14,7 @@ class About extends Component {
               <div className='aboutname'><i>About Us</i></div>
             </div> 
           </div>
-          {/* <div className="row">
+          <div className="row1">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
               <p className="taxs">What is TAX?</p><br/>
@@ -27,11 +27,11 @@ class About extends Component {
             </div>  
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           </div>
-          <div className="row">
+           <div className="row1">
               <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
               <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
                 <img  src={require('../images/benifitsa.jpg')} alt="Card" className="bimg" />
-          <div className="row">
+          <div className="row1">
               <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
               <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
               <div className="box bg-cello aboutt benifit">
@@ -49,7 +49,7 @@ class About extends Component {
               </div>
               <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>   
           </div> 
-         <div className="row">
+         <div className="row1"> 
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 backgroundw">
           <p className="paragraph"><i>Why US?</i></p><br/>
@@ -64,7 +64,7 @@ class About extends Component {
           </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div> 
-        <div className="row"> 
+         <div className="row1"> 
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
               <h1 className="teamc"><i>Our Team</i></h1>
@@ -133,11 +133,11 @@ class About extends Component {
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           </div>
         </div>
-        <div className="row backendp">
+         <div className="row1 backendp">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <p className="peoplep"><i>“What People Say”</i></p>
-        <div className="row">
+        <div className="row1">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
             <div className="peoplep1">
@@ -178,9 +178,9 @@ class About extends Component {
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          </div> */}
+          </div>   
       {/* <Footer/> */}
-      {/* </div>   */}
+      </div>  
       </div>
     );
   }
