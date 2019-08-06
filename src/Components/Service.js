@@ -9,89 +9,84 @@ class Service extends Component {
     return (
       <div>
         <Navbar/>
-        <div className="row">
+        <div className="row1">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 appth">
              <div className='apptname'><i>Service</i></div>
              <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           </div>
          </div>
-        <div className="row">
+         <div className="row1">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-          <h1 className="expert"><i>Expert Solution</i></h1><br/>
+          <p className="expert">Expert Solution</p><br/>
             <p><i>*Welcome to Expert Solutions Tax and Financial Services Inc, an independent full- service firm offering services and solutions for tax management, 
                   accounting, income tax, retirement planning, insurance, consulting, and wealth management needs.<br/>
                   *Enrolled agents (EAs) are America’s Tax Experts. EAs are the only federally licensed tax preparers who also have unlimited rights to represent taxpayers before the IRS.<br/>
                   </i></p>
-            <input type="submit" value="Read More" className="reade"></input>
-          </div>    
+                  <a href="./ourc"><input type="submit" value="Read More" className="reade"></input></a>
+          </div> 
+           
+             
           <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
             <img src={require('../images/teamh.jpg')} className="expertimg" alt="teamimage" />
           </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
-        <div className="row">
-          <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-          <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-             <h1 className="expert"><i>Our Clients</i></h1>
-        <div className="row backgroundcolor">
-          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
-              <img src={require('../images/logo2.png')} alt="Card" className="logoi"/>
-              <p className="logop"><i>AICPA Tax Center</i></p>
-              <p className="ausp1">The AICPA's founding defined accountancy as a profession characterized by educational requirements, professional standards, 
-                a code of professional ethics, and alignment with the public interest.</p>
+        <div className="row1">
+          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ourch">
+          <div className="row1">
+             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+             <p className="ourchpa">Our Clients</p>
+             <p className="ourchpb">We work closely with our diverse client base to provide exceptional one-on-one service. Among our clients there are many world-renowned industry leaders.</p>
           </div>
-          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
-              <img src={require('../images/logo3.png')} alt="Card" className="logoi"/>
-              <p className="logop"><i>Tax And Super Australia</i></p>
-              <p className="ausp">Superannuation in Australia is taxed by the Australian taxation system at three points: on contributions received by a superannuation fund.
-                on investment income earned by the fund, and on benefits paid by the fund.</p>
+          <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <img src={require('../images/services1.png')} alt="Card" className="logoi"/>
           </div>
-          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
-              <img src={require('../images/logo5.jpg')} alt="Card" className="logoi"/>
-              <p className="logop"><i>BP Strategic Solutions</i></p>
-              <p className="ausp">Personalized Service, Business Plans, Financial Modeling, Budgeting and financial analysis. We have one goal at BP Strategics.the fields of accounting,and business strategy.</p>
+          <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <img src={require('../images/services2.png')} alt="Card" className="logoi"/>
           </div>
-          <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3">      
-              <img src={require('../images/logo4.jpg')} alt="Card " className="logoi"/>
-              <p className="logop"><i>JWSS Tax Center</i></p>
-              <p className="ausp1">I am professional tax accountant with over 5 years of experience. I pride myself in helping my clients save money on taxes and getting them the maximum refunds allowed legally.
-             </p>
+          <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <img src={require('../images/services3.png')} alt="Card" className="logoi"/>
+          </div> <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          <img src={require('../images/services4.png')} alt="Card" className="logoi"/>
           </div>
         </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row1">
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
           <h1 className="taxus"><i>Tax Service</i></h1>
+         <p> We offer a full range of tax planning, preparation and support services.</p>
           <CardGroup className="cfonts">
         <Card>
           <CardBody>
-            <img src={require('../images/calculatora.jpg')} alt="Card" className="cimgs"/>
-            <p className="servicep">CORPORATE TAX</p>
-            <p>Our Tax Knowledge and Solutions Team is a dedicated group of professionals, rich in experience on Tax and Regulatory matters. Our team stays constantly abreast with changes in tax policies, administration  and international jurisprudence. We endeavor to identify potential threats & opportunities and advise on appropriate strategies to mitigate exposure and optimize tax incidence on our clients.</p>    
+            <img src={require('../images/services5.jpg')} alt="Card" className="cimgs"/>
+            <p className="servicep">Tax Preparation</p>
+            <p>Are you anxious about filing your on tax returns? While a computer software program may help, there’s no substitute for the quality of service and advice you’ll receive from an experienced tax.</p>    
           </CardBody>
         </Card>
         <Card>     
           <CardBody>
-            <img  src={require('../images/calculatorb.jpg')} alt="Card" className="cimgs" />
-            <p className="servicep">INTERNATIONAL TAX</p>
-            <p>Our International Tax specialists offer services that successfully align all the different areas of taxation into a benefit-driven strategy that is reflected favorably in the various financial parameters. Our people and global resources are able to help clients develop and execute business strategies quickly and effectively, with strong accountability and governance.</p></CardBody>
+            <img  src={require('../images/services6.jpg')} alt="Card" className="cimgs" />
+            <p className="servicep">IRS Audit Representation</p>
+            <p>If you have been selected for an IRS audit, professional representation can set your mind at ease. We’ll take the lead in dealing with the tax authorities based on our familiarity with their.</p></CardBody>
         </Card>
         <Card>
           <CardBody>
-            <img  src={require('../images/calculatorc.jpg')} alt="Card" className="cimgs" />
-            <p className="servicep">GST</p>
-            <p>We have designed a comprehensive approach, which is aligned to the needs of our clients and we assist our clients in undertaking GST compliances.In order to meet various demands of our esteemed clients, we are engaged in providing an optimum quality array of GST Services. </p>
+            <img  src={require('../images/services7.jpg')} alt="Card" className="cimgs" />
+            <p className="servicep">Tax Planning</p>
+            <p>Proactive planning is the key to minimizing your tax liability. We work with businesses and individuals to pay the least amount of tax required by law. Your unique circumstances will determine the strategies.</p>
           </CardBody>
         </Card>
       </CardGroup>
           </div>
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
-        <Footer/>
+        {/* <Footer/>  */}
       </div>
      
     );

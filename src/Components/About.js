@@ -22,10 +22,10 @@ class About extends Component {
               <p className="taxp">The complex and diverse nature of taxation means that tax advisers rapidly develop areas of specialist knowledge.</p>
               <input type="submit" value="Read More" className="readb"></input>
             </div>
-            <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
               <img src={require('../images/taxa.jpg')} className="taximga" alt="calculator" />  
             </div>  
-            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
           </div>
            <div className="row1">
               <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
@@ -34,7 +34,7 @@ class About extends Component {
           <div className="row1">
               <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
               <div className="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-              <div className="box bg-cello aboutt benifit">
+              <div className="box bg-cello  benifit">
                 <h1 className="benifita">Our Benifits</h1>
                 <p className="benifitp"><h3>1.Competency</h3>
                 We keep abreast of relevant trends and changes in accounting treatment, tax law, and financial management. </p>

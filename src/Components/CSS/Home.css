@@ -114,7 +114,7 @@ select{
 }
 .aboutt{
   position: relative;
-  margin-top: -135%;
+  margin-top: -145%;
   color: rgba(255, 255, 255, 0.9);
   background-color: #1e3953;
   padding: 75px 60px 155px 54px;
@@ -136,7 +136,7 @@ select{
   border-radius: 0px;
   left: 18%; 
   height: 50px;
-  top:80%;
+  top:70%;
   font-weight: bold;
   color:white;
   border-color: white;

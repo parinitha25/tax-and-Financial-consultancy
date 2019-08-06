@@ -13,28 +13,39 @@
     background-color: #ff0062;
 }
 .expert{
-    margin-top: 250px;
-    margin-left: 30px;
-    color: #102fdb
+    margin-top: 18%;
+    font-size: 70px;
+    color: #102fdb;
+    line-height: .88889;
 }
 .expertimg{
-    margin-top: 250px;
-    width: 500px;
+    margin-top: 32%;
+    width: 100%;
     height: 300px;
     /* margin-left: 800px; */
 }
 .reade{
     position: absolute; 
-    top: 520px; 
-    left: 150px; 
+    top: 87%; 
+    left: 20%; 
     height: 50px;
     border:none;
     border-color: rgb(255, 254, 254);
-    background-color: #ec792c;
+    background-color: #2cec8c;
     font-weight: bold;
     font-size: 30px;
     width: 200px;
-    color: aqua;
+    color:white;
+}
+.ourch{
+    background-color:#1a283a;
+    color: white;
+    margin-top: 10%;
+    padding: 100px;
+    
+}
+.ourchpa{
+    font-size: 53px;
 }
 .logoi{
     width: 150px;
@@ -74,7 +85,4 @@
 .cimgs{
     width: 300px;
     height: 200px;
-}
-.cfonts{
-    height: 700px;
 }
