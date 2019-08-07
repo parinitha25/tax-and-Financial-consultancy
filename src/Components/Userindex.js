@@ -21,6 +21,7 @@ export const login = user => {
       Email: user.Email,
       Password: user.Password
     })
+    
     .then(res => {
       console.log('login sucessfully')
     })

@@ -3,6 +3,7 @@ import logot from '../logot.svg';
 import {Form,Button } from 'react-bootstrap';
 import './CSS/Login.css';
 import {login} from './Userindex';
+import {setAuthorizationToken} from '../Utils/Setauthorization';
   
 class Login extends Component {
   constructor(props){
@@ -48,19 +49,40 @@ handleSubmit=(e)=>{
     })
 }
 handleSignin=async()=>{
-    debugger    
+  debugger    
   const { email,password} = this.state;
   const payload = { email,password }
   await login(payload).then(res => {
     console.log(res,"uhbjhnuhj")
-      if(res==="User succesfully signIn"){
-          alert("login succesfull")
-          this.props.history.push('/home')   
-      }
-      else
-          alert("login fail");
+    const token = res.state.token;
+    localStorage.setItem('jwtToken',token);
+    setAuthorizationToken(token);
   })
 }
+
+// handleSignin = (event) => {
+//   event.preventDefault();
+//   debugger;
+//   fetch('/signin', {
+//     method: 'POST',
+//     body: JSON.stringify(this.state),
+//     headers: {
+//       'Content-Type': 'application/json', 
+//     }
+//   })
+//   .then(res => {
+//     if (res.status == 200) {
+//       this.props.history.push('/');
+//     } else {
+//       const error = new Error(res.error);
+//       throw error;
+//     }
+//   })
+//   .catch(err => {
+//     console.error(err);
+//     alert('Error logging in please try again');
+//   });
+// }
   render() {
     const { email, password } = this.state
     return (

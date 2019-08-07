@@ -34,7 +34,7 @@ class Service extends Component {
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
         </div>
         <div className="row1">
-          {/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> */}
+          
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 ourch">
           <div className="row1">
              <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
@@ -60,25 +60,25 @@ class Service extends Component {
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
           <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10">
           <h1 className="taxus"><i>Tax Service</i></h1>
-         <p> We offer a full range of tax planning, preparation and support services.</p>
+         <p>We offer a full range of tax planning, preparation and support services.</p>
           <CardGroup className="cfonts">
         <Card>
           <CardBody>
             <img src={require('../images/services5.jpg')} alt="Card" className="cimgs"/>
-            <p className="servicep">Tax Preparation</p>
+            <p className="servicesp">Tax Preparation</p>
             <p>Are you anxious about filing your on tax returns? While a computer software program may help, there’s no substitute for the quality of service and advice you’ll receive from an experienced tax.</p>    
           </CardBody>
         </Card>
         <Card>     
           <CardBody>
             <img  src={require('../images/services6.jpg')} alt="Card" className="cimgs" />
-            <p className="servicep">IRS Audit Representation</p>
+            <p className="servicesp">IRS Audit Representation</p>
             <p>If you have been selected for an IRS audit, professional representation can set your mind at ease. We’ll take the lead in dealing with the tax authorities based on our familiarity with their.</p></CardBody>
         </Card>
         <Card>
           <CardBody>
             <img  src={require('../images/services7.jpg')} alt="Card" className="cimgs" />
-            <p className="servicep">Tax Planning</p>
+            <p className="servicesp">Tax Planning</p>
             <p>Proactive planning is the key to minimizing your tax liability. We work with businesses and individuals to pay the least amount of tax required by law. Your unique circumstances will determine the strategies.</p>
           </CardBody>
         </Card>

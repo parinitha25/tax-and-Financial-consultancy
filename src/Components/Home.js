@@ -15,22 +15,21 @@ class Home extends Component {
       total:""
     }
   }
-    handleChanget=(e)=>{
-      this.setState({[e.target.name]:e.target.value})
-    }
-    handleSubmitt=(e)=>{
-      var{income,total}=this.state;
-      total=income*5/100;
-      this.setState({total:total});
-      console.log(this.state.year_income);
-    }
-
+  handleChanget=(e)=>{
+    this.setState({[e.target.name]:e.target.value})
+  }
+  handleSubmitt=(e)=>{
+    var{income,total}=this.state;
+    total=income*5/100;
+    this.setState({total:total});
+    console.log(this.state.year_income);
+  }
   render() {
     return (
       <div>
         <Navbar/>  
-        <div className="row1">
-        <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
+          <div className="row1">
+            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
             <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 " >
                 <MDBCarousel 
                   activeItem={1}

@@ -67,7 +67,7 @@ class Appointment extends Component {
       return (
       <div>
         <Navbar/>
-          <div className="row">
+          <div className="row1">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 appth">
              <div className='apptname'><i>Appointment</i></div>
@@ -110,7 +110,7 @@ class Appointment extends Component {
               <input type="submit" value="send" className="sendbta"></input>
               <button type="submit" className="resetbta">Reset</button>  
           </Form>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     );
   }
