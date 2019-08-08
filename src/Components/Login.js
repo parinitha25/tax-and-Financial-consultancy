@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import logot from '../logot.svg';
 import {Form,Button } from 'react-bootstrap';
 import './CSS/Login.css';
-import {login} from './Userindex';
-import {setAuthorizationToken} from '../Utils/Setauthorization';
+import api from '../api/index';
+// import {login} from './Userindex';
+// import {setAuthorizationToken} from '../Utils/Setauthorization';
   
 class Login extends Component {
   constructor(props){
@@ -19,10 +20,10 @@ class Login extends Component {
 handleSubmit=(e)=>{
     e.preventDefault();
     let t=0;
-    let reqobj={
-      Email:this.state.email,
-      Password:this.state.password,
-    }
+    // let reqobj={
+    //   Email:this.state.email,
+    //   Password:this.state.password,
+    // }
     let reg_pwd=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
     let reg_email=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if(!this.state.email) this.setState({emailError:'Email is required'});
@@ -39,50 +40,29 @@ handleSubmit=(e)=>{
           this.setState({passwordError:''});
       }
       if(t>1) {   
-        // this.props.history.push('/home')    
-    }
-    console.log(reqobj);
-    login(reqobj).then(res => {
-    })
-    .catch (res=> {
-        prompt(res)
-    })
+      
+    // console.log(reqobj);
+    // login(reqobj).then(res => {
+    // })
+    // .catch (res=> {
+    //     prompt(res)
+    // })
+}
 }
 handleSignin=async()=>{
   debugger    
   const { email,password} = this.state;
   const payload = { email,password }
-  await login(payload).then(res => {
+  await api.login(payload).then(res => {
     console.log(res,"uhbjhnuhj")
-    const token = res.state.token;
-    localStorage.setItem('jwtToken',token);
-    setAuthorizationToken(token);
+    // const token = res.state.token;
+    // localStorage.setItem('jwtToken',token);
+    // setAuthorizationToken(token);
   })
+  this.props.history.push('/home')
 }
 
-// handleSignin = (event) => {
-//   event.preventDefault();
-//   debugger;
-//   fetch('/signin', {
-//     method: 'POST',
-//     body: JSON.stringify(this.state),
-//     headers: {
-//       'Content-Type': 'application/json', 
-//     }
-//   })
-//   .then(res => {
-//     if (res.status == 200) {
-//       this.props.history.push('/');
-//     } else {
-//       const error = new Error(res.error);
-//       throw error;
-//     }
-//   })
-//   .catch(err => {
-//     console.error(err);
-//     alert('Error logging in please try again');
-//   });
-// }
+
   render() {
     const { email, password } = this.state
     return (

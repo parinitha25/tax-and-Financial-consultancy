@@ -9,14 +9,14 @@ class Contact extends Component {
     return (
       <div>
         <Navbar/>
-        <div className="row">
+        <div className="row1">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             <div className="col-xs-10 col-sm-10 col-md-10 col-lg-10 appth">
              <div className='apptname'><i>Contactus</i></div>
              <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             </div>
           </div>
-        <div className="row">
+        <div className="row1">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div className="row">
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>  
@@ -38,21 +38,21 @@ class Contact extends Component {
             <label className="form">Get in Touch</label>
             <Form.Group >
               <label><b>Name</b></label><br/>
-              <input type="text" className="width"  />
+              <input type="text" className="widthc"  />
             </Form.Group>
             <Form.Group>
               <label><b>Email</b></label><br/>
-              <input type="text" className="width"  />
+              <input type="text" className="widthc"  />
             </Form.Group>
             <Form.Group>
               <label><b>Message</b></label><br/>
-              <input type="text" className="width"  />
-              <input type="text" className="width"  />
-              <input type="text" className="width"  />
-              <input type="text" className="width"  />
-              <input type="text" className="width"  />
-              <input type="text" className="width"  />
-              <input type="text" className="width"  />
+              <input type="text" className="widthc"  />
+              <input type="text" className="widthc"  />
+              <input type="text" className="widthc"  />
+              <input type="text" className="widthc"  />
+              <input type="text" className="widthc"  />
+              <input type="text" className="widthc"  />
+              <input type="text" className="widthc"  />
             </Form.Group>
               <button  type="submit" className="sendbt">Send</button>
               <button type="submit" className="resetbt">Reset</button>
@@ -61,7 +61,7 @@ class Contact extends Component {
           </div>
         </div>
         </div>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     );
   }

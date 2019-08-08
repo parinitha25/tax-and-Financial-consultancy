@@ -50,7 +50,7 @@ function App() {
       <Route exact path='/calci' component={Calculator}></Route>
       <Route exact path='/sch' component={Schedule}></Route>
 
-      <PrivateRoute exact path="/appt" component={Appointment} />
+      {/* <PrivateRoute exact path="/appt" component={Appointment} /> */}
       {/* <PrivateRoute exact path="/confidentiality" component={Confidentiality} /> */}
     
     
