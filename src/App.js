@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <Router>
       <Switch>
-      <Route exact path='/home' component={Home}></Route> 
+      {/* <Route exact path='/home' component={Home}></Route> 
       <Route exact path='/signin' component={Login}></Route> 
       <Route exact path='/signup' component={Signup}></Route>
       <Route exact path='/appt' component={Appointment}></Route>
@@ -42,9 +42,9 @@ function App() {
       <Route exact path='/ourc' component={Ourclient}></Route>
       <Route exact path='/foot' component={Footer}></Route>
       <Route exact path='/calci' component={Calculator}></Route>
-      <Route exact path='/sch' component={Schedule}></Route>
-
-      {/* <PrivateRoute exact path="/appt" component={Appointment} />
+      <Route exact path='/sch' component={Schedule}></Route> */}
+ 
+      <PrivateRoute exact path="/appt" component={Appointment} />
       <PrivateRoute exact path="/home" component={Home} />
       <PrivateRoute exact path="/signin" component={Login} />
       <PrivateRoute exact path="/signup" component={Signup} />
@@ -54,9 +54,9 @@ function App() {
       <PrivateRoute exact path="/ourc" component={Ourclient} />
       <PrivateRoute exact path="/foot" component={Footer} />
       <PrivateRoute exact path="/calci" component={Calculator} />
-      <PrivateRoute exact path="/sch" component={Schedule} />
+      <PrivateRoute exact path="/sch" component={Schedule} /> 
     
-     */}
+    
       
       </Switch>
       </Router>

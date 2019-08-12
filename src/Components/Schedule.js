@@ -3,10 +3,12 @@ import axios from 'axios';
 import './CSS/Schedule.css';
 import Navbar from './Navbar';
 
+
 class Schedule extends Component {
     state = { users:[]
     }
     componentDidMount(){
+      debugger
         axios.get('http://localhost:8000/appt')
         .then(res => {
             this.setState({users:res.data});
@@ -25,6 +27,7 @@ class Schedule extends Component {
                 </div>
             </div>
             <div className="row"> 
+           
               <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"><p className="schheading">Name</p>
               <div className="schheadingp">{this.state.users.map(user => <p>{user.name}</p>)}</div></div>
               <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"><p className="schheading">Email</p>

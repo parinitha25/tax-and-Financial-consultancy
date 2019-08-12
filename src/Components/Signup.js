@@ -5,7 +5,6 @@ import {Form,Button } from 'react-bootstrap';
 import browserHistory from '../Utils/browserHistory';
 import setAuthorizationToken from '../Utils/setAuthorizationToken';
 import '../App.css';
-// import {register} from './Userindex';
 import api from '../Api/index';
 
 class Signup extends Component {
@@ -31,12 +30,7 @@ class Signup extends Component {
     debugger
     const { FirstName,LastName,Email,Password,Phone } = this.state
     const payload = { FirstName,LastName,Email,Password,Phone }
-
-
-
       e.preventDefault();
-      
-      
       let reg_user=/^[A-Za-z0-9]{2,10}$/;
       let reg_pwd=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
       let reg_email=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -86,7 +80,7 @@ class Signup extends Component {
                   Phone:''
                 })
                 console.log('hello')
-                browserHistory.push("/home");
+                browserHistory.push("/appt");
             });
                 
         }
