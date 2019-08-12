@@ -53,7 +53,7 @@ handleSubmit=async(e)=>{
                       password:'' 
                     })
                     console.log('hello')
-                    browserHistory.push("/home");
+                    browserHistory.push("/");
                 });       
             }
 }

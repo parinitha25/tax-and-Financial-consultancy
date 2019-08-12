@@ -15,28 +15,35 @@ class Appointment extends Component {
       startDate: new Date(),
       name:'',
       email:'',
-      date:'',
-      time:''
+      date: new Date(),
+      time:new Date()
+      
     }; 
   }
-  handleChange=(date)=>{
-    this.setState({
-      startDate: date,
+  // handleChange=(date)=>{
+  //   this.setState({
+  //     startDate: date,
      
+  //   });
+  // }
+  handleDate=(date)=> {
+    this.setState({
+      date: date
     });
   }
   handleChangeg=(e)=>{
     this.setState({[e.target.name]:e.target.value});
   }
-  handleSubmitg=async(e)=>{
+  handleSubmit=async(e)=>{
     debugger
     const { email,name,date,time} = this.state
     const payload = { email,name,date,time}
     e.preventDefault();
-    let t=0;
-    console.log(this.state);
+   
+    // console.log(this.state);
     let reg_user=/^[A-Za-z0-9]{2,10}$/;
     let reg_email=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let t=0;
     if(!this.state.name) this.setState({namelError:'Name is required'});
     else if(!reg_user.test(this.state.name)) this.setState({namelError:'Invalid name'});
     else{
@@ -52,10 +59,12 @@ class Appointment extends Component {
     if(t>1)  {
     console.log("hii")
      debugger
-     await api.appointment(payload).then(res => {
+     await api.appoit(payload).then(res => {
       this.setState({
         name: '',
-        email: ''
+        email: '',
+        date:'',
+        time:''
        
       })
       console.log('hello')
@@ -75,7 +84,7 @@ class Appointment extends Component {
 // } 
 
   render() {
-    const { email, name,date,time} = this.state
+    const { email, name} = this.state
       return (
       <div>
         <Navbar/>
@@ -86,7 +95,7 @@ class Appointment extends Component {
              <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
             </div>
           </div>
-          <Form onSubmit={this.handleSubmitg}>
+          <Form onSubmit={this.handleSubmit}>
             <label className="formg">Get in Touch</label>
             <Form.Group className="date">
               <label><b>Name</b></label>
@@ -101,16 +110,18 @@ class Appointment extends Component {
             <Form.Group>
               <label className="datet"><b>Date</b></label>
               <DatePicker
-                  selected={this.state.startDate}
-                  onChange={this.handleChange}
+                  // selected={this.state.startDate}
+                  selected={this.state.date}
+                  onChange={this.handleDate}
                   className="widthd"
               />
             </Form.Group>
             <Form.Group >
               <label className="datet"><b>Time</b></label>
               <DatePicker
-                  selected={this.state.startDate}
-                  onChange={this.handleChange}
+                  // selected={this.state.startDate}
+                  selected={this.state.time}
+                  onChange={this.handleDate}
                   showTimeSelect
                   showTimeSelectOnly
                   timeIntervals={15}
@@ -119,7 +130,7 @@ class Appointment extends Component {
                   className="widthd"
               />
             </Form.Group>   
-              <input type="submit" value="send" className="sendbta" ></input>
+              <button type="submit" value="send" className="sendbta" >Send</button>
               <button type="submit" className="resetbta">Reset</button>  
           </Form>
         {/* <Footer/> */}
