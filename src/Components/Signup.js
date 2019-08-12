@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import logot from '../logot.svg';
 import {Form,Button } from 'react-bootstrap';
+import browserHistory from '../Utils/browserHistory';
+import setAuthorizationToken from '../Utils/setAuthorizationToken';
 import '../App.css';
-import {register} from './Userindex';
-import api from '../api/index';
+// import {register} from './Userindex';
+import api from '../Api/index';
 
 class Signup extends Component {
   constructor(props){
@@ -24,21 +27,21 @@ class Signup extends Component {
   handleChange=(e)=>{
       this.setState({[e.target.name]:e.target.value});
   }
-  handleSubmit=async()=>{
-    // debugger
+  handleSubmit=async(e)=>{
+    debugger
     const { FirstName,LastName,Email,Password,Phone } = this.state
-        const payload = { FirstName,LastName,Email,Password,Phone }
+    const payload = { FirstName,LastName,Email,Password,Phone }
 
 
 
-      // e.preventDefault();
-      let t=0;
+      e.preventDefault();
+      
       
       let reg_user=/^[A-Za-z0-9]{2,10}$/;
       let reg_pwd=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
       let reg_email=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       let reg_mob=/^(\+\d{1,3}[- ]?)?\d{10}$/;
-     
+      let t=0;
       if(!this.state.FirstName) this.setState({fnameError:'Firstname is required'});
       else if(!reg_user.test(this.state.FirstName)) this.setState({fnameError:'Invalid Firstname'});
       else{
@@ -72,14 +75,6 @@ class Signup extends Component {
           this.setState({phoneError:''});
       }
       if(t>4) {
-    //       this.props.history.push('/appt')    
-    //   }
-    //   console.log(reqobj);
-    // register(reqobj).then(res => {
-    // })
-    // .catch (res=> {
-    //     prompt(res)
-    // })
     console.log("hii")
     debugger;
             await api.register(payload).then(res => {
@@ -91,7 +86,7 @@ class Signup extends Component {
                   Phone:''
                 })
                 console.log('hello')
-                this.props.history.push('/appt')
+                browserHistory.push("/home");
             });
                 
         }
@@ -132,7 +127,7 @@ class Signup extends Component {
               <input type="number" className="widthl" name="Phone"  onChange={this.handleChange}  value={Phone}/>
               <p className="colorform">{this.state.phoneError}</p>
               </Form.Group>
-              <Button variant="primary" type="submit">Signup</Button>
+              <Button  variant="primary" type="submit">Signup</Button>
           </Form>
           </div>
         <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>

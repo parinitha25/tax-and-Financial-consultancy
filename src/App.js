@@ -19,19 +19,13 @@ import Schedule from './Components/Schedule';
 const PrivateRoute = ({ component: IncomingComponent, ...rest }) => (
   <Route
   {...rest}
-  render={props => (
-  (localStorage.getItem('token') && localStorage.getItem('user')) ? (
-  <IncomingComponent {...props} />
-  ) : (
-  <Redirect to={{
-  pathname: '/appt',
-  state: { from: props.location },
-  }}
-  />
-  )
+  render={props => (  
+    (sessionStorage.getItem('authentication')) ? (<IncomingComponent {...props} />) : (
+      <Redirect to={{pathname: '/', state: { from: props.location }, }}/>)
   )}
-  />
-  );
+/>
+);
+
 
 function App() {
   return (
@@ -50,10 +44,19 @@ function App() {
       <Route exact path='/calci' component={Calculator}></Route>
       <Route exact path='/sch' component={Schedule}></Route>
 
-      {/* <PrivateRoute exact path="/appt" component={Appointment} /> */}
-      {/* <PrivateRoute exact path="/confidentiality" component={Confidentiality} /> */}
+      {/* <PrivateRoute exact path="/appt" component={Appointment} />
+      <PrivateRoute exact path="/home" component={Home} />
+      <PrivateRoute exact path="/signin" component={Login} />
+      <PrivateRoute exact path="/signup" component={Signup} />
+      <PrivateRoute exact path="/about" component={About} />
+      <PrivateRoute exact path="/service" component={Service} />
+      <PrivateRoute exact path="/contact" component={Contact} />
+      <PrivateRoute exact path="/ourc" component={Ourclient} />
+      <PrivateRoute exact path="/foot" component={Footer} />
+      <PrivateRoute exact path="/calci" component={Calculator} />
+      <PrivateRoute exact path="/sch" component={Schedule} />
     
-    
+     */}
       
       </Switch>
       </Router>

@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import logot from '../logot.svg';
 import {Form,Button } from 'react-bootstrap';
 import './CSS/Login.css';
-import api from '../api/index';
+import axios from 'axios';
+import browserHistory from '../Utils/browserHistory';
+import setAuthorizationToken from '../Utils/setAuthorizationToken';
+import api from '../Api/index';
 // import {login} from './Userindex';
 // import {setAuthorizationToken} from '../Utils/Setauthorization';
   
@@ -17,7 +20,9 @@ class Login extends Component {
   handleChange=(e)=>{
     this.setState({[e.target.name]:e.target.value});
 }
-handleSubmit=(e)=>{
+handleSubmit=async(e)=>{
+  const {email,password } = this.state
+    const payload = { email,password }
     e.preventDefault();
     let t=0;
     // let reqobj={
@@ -40,28 +45,28 @@ handleSubmit=(e)=>{
           this.setState({passwordError:''});
       }
       if(t>1) {   
-      
-    // console.log(reqobj);
-    // login(reqobj).then(res => {
-    // })
-    // .catch (res=> {
-    //     prompt(res)
-    // })
-}
-}
-handleSignin=async()=>{
-  debugger    
-  const { email,password} = this.state;
-  const payload = { email,password }
-  await api.login(payload).then(res => {
-    console.log(res,"uhbjhnuhj")
-    // const token = res.state.token;
-    // localStorage.setItem('jwtToken',token);
-    // setAuthorizationToken(token);
-  })
-  this.props.history.push('/home')
+        console.log("hii")
+        debugger;
+                await api.login(payload).then(res => {
+                    this.setState({
+                      email: '',
+                      password:'' 
+                    })
+                    console.log('hello')
+                    browserHistory.push("/home");
+                });       
+            }
 }
 
+handleSignin=async()=>{
+  debugger
+  const { email,password} = this.state;
+  const payload = { email,password }
+  const signinRes = await api.login(payload)
+  sessionStorage.setItem('authentication', signinRes.data.token)
+  sessionStorage.setItem('userEmail', signinRes.data.email)
+  browserHistory.push("/home");
+}
 
   render() {
     const { email, password } = this.state
