@@ -70,7 +70,7 @@ handleSignin=async()=>{
   //     localStorage.setItem('jwtToken',token);
   //     setAuthorizationToken(token);
   // })
-  browserHistory.push("/home");
+  browserHistory.push("/");
 }
 
 

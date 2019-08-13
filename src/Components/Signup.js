@@ -80,7 +80,7 @@ class Signup extends Component {
                   Phone:''
                 })
                 console.log('hello')
-                browserHistory.push("/appt");
+                browserHistory.push("/signin");
             });
                 
         }

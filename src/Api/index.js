@@ -8,12 +8,14 @@ const api = axios.create({
 export const register = payload => api.post('/signup', payload)
 export const login = payload => api.post('/signin', payload)
 export const appoit =payload => api.post('/appt', payload) 
+export const contact =payload => api.post('/contact', payload) 
 
 
 const apis = {
     register,
     login,
-    appoit
+    appoit,
+    contact
 }
 
 export default apis

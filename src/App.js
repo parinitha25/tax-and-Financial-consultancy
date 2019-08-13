@@ -34,20 +34,18 @@ function App() {
       <Switch>
        <Route exact path='/' component={Home}></Route> 
        <Route exact path='/signin' component={Login}></Route> 
-      {/* <Route exact path='/signup' component={Signup}></Route>
-      <Route exact path='/appt' component={Appointment}></Route>
+       <Route exact path='/signup' component={Signup}></Route>
+      {/* <Route exact path='/appt' component={Appointment}></Route>
       <Route exact path='/about' component={About}></Route> 
       <Route exact path='/service' component={Service}></Route>    
       <Route exact path='/contact' component={Contact}></Route> 
       <Route exact path='/ourc' component={Ourclient}></Route>
       <Route exact path='/foot' component={Footer}></Route>
       <Route exact path='/calci' component={Calculator}></Route>
-      <Route exact path='/sch' component={Schedule}></Route>   */}
+      <Route exact path='/sch' component={Schedule}></Route>    */}
 
       <PrivateRoute exact path="/appt" component={Appointment} />
-      {/* <PrivateRoute exact path="/" component={Home} /> */}
-      {/* <PrivateRoute exact path="/signin" component={Login} /> */}
-      <PrivateRoute exact path="/signup" component={Signup} />
+      {/* <PrivateRoute exact path="/signup" component={Signup} /> */}
       <PrivateRoute exact path="/about" component={About} />
       <PrivateRoute exact path="/service" component={Service} />
       <PrivateRoute exact path="/contact" component={Contact} />

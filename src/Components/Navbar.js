@@ -12,7 +12,7 @@ class Navbar extends Component {
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
           <li class="nav-item ">
-            <a class="nav-link homen " href="./home">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link homen " href="./">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./about">About Us</a>
@@ -36,7 +36,8 @@ class Navbar extends Component {
             <a className="search_btn1" href="#"><i className="fa fa-search"></i></a>
           </div> 
           <a class="nav-link logout" href="./signin">Login</a>
-          <a class="nav-link logout" href="./signup">Logout</a>
+          <a class="nav-link logout" href="./signup">Signup</a>
+          <a class="nav-link logout" href="./">Logout</a>
         </div>
         </nav>
       </div>
