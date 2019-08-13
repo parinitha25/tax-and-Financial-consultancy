@@ -5,16 +5,16 @@ class TableRow extends Component {
     return (
         <tr>
           <td>
-            {this.props.obj.name}
+            {this.props.pay.name}
           </td>
           <td>
-            {this.props.obj.email}
+            {this.props.pay.email}
           </td>
           <td>
-            {this.props.obj.date}
+            {this.props.pay.date}
           </td>
           <td>
-            {this.props.obj.time}
+            {this.props.pay.time}
           </td>
           <td>
             <button className="btn btn-primary">Edit</button>

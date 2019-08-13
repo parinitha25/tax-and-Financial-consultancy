@@ -124,7 +124,7 @@
 //                   onChange={this.handleDate}
 //                   showTimeSelect
 //                   showTimeSelectOnly
-//                   timeIntervals={15}
+//                   timeIntervals={15} cf
 //                   dateFormat="h:mm aa"
 //                   timeCaption="Time"
 //                   className="widthd"
@@ -146,6 +146,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 // import browserHistory from '../Utils/browserHistory';
 import browserHistory from '../Utils/browserHistory';
+import api from '../Api/index';
 
 export default class Appointment extends Component {
   constructor(props) {
@@ -154,7 +155,7 @@ export default class Appointment extends Component {
     this.onChangeBusinessName = this.onChangeBusinessName.bind(this);
     this.onChangeGstNumber = this.onChangeGstNumber.bind(this);
     this.onChangeNumber = this.onChangeNumber.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
     this.state = {
      name: '',
@@ -184,32 +185,78 @@ export default class Appointment extends Component {
     })
   }
 
-  onSubmit(e) {
-    e.preventDefault();
-    const obj = {
-      name: this.state.name,
-      email: this.state.email,
-      date: this.state.date,
-      time: this.state.time,
+  // onSubmit(e) {
+  //   debugger;
+  //   e.preventDefault();
+  //   const obj = {
+  //     name: this.state.name,
+  //     email: this.state.email,
+  //     date: this.state.date,
+  //     time: this.state.time,
 
-    };
-    axios.post('http://localhost:8000/appt', obj)
-        .then(res => console.log(res.data));
+  //   };
+  //    axios.post('http://localhost:8000/appt', obj)
+  //      .then(res => console.log(res.data));
     
-    this.setState({
-      name: '',
-      email: '',
-      date:'',
-      time:''
-    })
-    browserHistory.push('./sch');
-  }
+  //   this.setState({
+  //     name: '',
+  //     email: '',
+  //     date:'',
+  //     time:''
+  //   })
+  //   browserHistory.push('./sch');
+  // }
+  handleSubmit=async(e)=>{
+        debugger
+        const { email,name,date,time} = this.state
+        const payload = { email,name,date,time}
+        e.preventDefault();
+           const obj = {
+              name: this.state.name,
+              email: this.state.email,
+              date: this.state.date,
+              time: this.state.time,
+           }
+        console.log(this.state);
+        let reg_user=/^[A-Za-z0-9]{2,10}$/;
+        let reg_email=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        let t=0;
+        if(!this.state.name) this.setState({namelError:'Name is required'});
+        else if(!reg_user.test(this.state.name)) this.setState({namelError:'Invalid name'});
+        else{
+            t++;
+            this.setState({namelError:''});
+        }   
+        if(!this.state.email) this.setState({emailError:'Email is required'});
+        else if(!reg_email.test(this.state.email)) this.setState({emailError:'Invalid Email'}); 
+        else {
+          t++;
+          this.setState({emailError:''});
+        }
+        if(t>1)  {
+        console.log("hii")
+         debugger
+         await api.appoit(payload).then(res => {
+          this.setState({
+            name: '',
+            email: '',
+            date:'',
+            time:''
+           
+          })
+          console.log('hello')
+          browserHistory.push("/sch");
+      });
+          
+    } 
+    } 
+
  
   render() {
     return (
         <div style={{ marginTop: 10 }}>
             <h3>Add New Business</h3>
-            <form onSubmit={this.onSubmit}>
+            <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
                     <label>Person Name:  </label>
                     <input 

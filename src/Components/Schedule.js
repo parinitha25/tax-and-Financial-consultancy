@@ -79,8 +79,8 @@ export default class Schedule extends Component {
         })
     }
     tabRow(){
-      return this.state.Users.map(function(object, i){
-          return <TableRow obj={object} key={i} />;
+      return this.state.Users.map(function(payload, i){
+          return <TableRow pay={payload} key={i} />;
       });
     }
 
