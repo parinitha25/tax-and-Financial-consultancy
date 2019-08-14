@@ -124,7 +124,7 @@ handleSubmit = async (e) => {
           </div>
         </div>
         </div>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     );
   }

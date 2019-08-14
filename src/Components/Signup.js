@@ -24,7 +24,7 @@ class Signup extends Component {
       }
   }
   handleChange=(e)=>{
-      this.setState({[e.target.name]:e.target.value});
+    this.setState({[e.target.name]:e.target.value});
   }
   handleSubmit=async(e)=>{
     debugger
@@ -41,8 +41,7 @@ class Signup extends Component {
       else{
            t++;
            this.setState({fnameError:''});
-      }
-         
+      }   
       if(!this.state.LastName) this.setState({lnameError:'Lastname is required'});
       else if(!reg_user.test(this.state.LastName)) this.setState({lnameError:'Invalid Lastname'}); 
       else {
@@ -69,21 +68,20 @@ class Signup extends Component {
           this.setState({phoneError:''});
       }
       if(t>4) {
-    console.log("hii")
-    debugger;
-            await api.register(payload).then(res => {
-                this.setState({
-                  FirstName: '',
-                  LastName: '',
-                  Email: '',
-                  Password:'',
-                  Phone:''
-                })
-                console.log('hello')
-                browserHistory.push("/signin");
-            });
-                
-        }
+        console.log("hii")
+        debugger;
+          await api.register(payload).then(res => {
+            this.setState({
+              FirstName: '',
+              LastName: '',
+              Email: '',
+              Password:'',
+              Phone:''
+            })
+            console.log('hello')
+            browserHistory.push("/signin");
+          });              
+      }
   }  
   
   render() {

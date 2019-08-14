@@ -1,80 +1,45 @@
 footer
 {
 	background-color: #1a3153;
-	height: 400px;
+	height:100%;
 	width:100%;
-}
-.footer{
-  display: grid;
-  grid-template-columns: 600px 200px 440px;
-  grid-template-rows: 340px;
-  grid-gap: 10px;
-}
-.fdiv1
-{
-  padding-left: 100px;
-  padding-top: 130px;
-  padding-right: 152px;
-  font-size: 18px;
-  color: #726f6f;
 }
 .aboutf
 {
 	color: white;
 	font-size: 20px;
+	margin-top:20%;
+	padding-left:30%; 
 }
-#Quick_Links
+.Quick_Links
 {
 	font-family: arial;
   color:white;
   padding-top: 10px;
-  text-decoration: none;
+	text-decoration: none;
+	padding-left:30%; 
 }
 
-.fdiv2
-{
-	padding: 10px;
-	margin-top: 130px;
-	text-align: left;
-}
-.fdiv3
-{
-	padding: 10px;
-	margin-top: 130px
-}
-/* .foot_a {
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
-  background:green;
-  color: white;
-  margin: 0 6px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-} */
 .enter_mail
 {
 	margin-top: 10px;
 	height: 35px;
-	width: 50%;
-	padding-left:  10px;
+	width: 70%;
 	background-color: white;
 	border: 1px solid #ccc;
 }
 .pf{
-  color: white;
+	color: white;
+	text-align:left;
 }
 .send
 {
 	height: 35px;
- 	width: 50px;
+ 	width: 27%;
   border: none;
 	background-color: #2cff02;
 	font-weight: bold;
 	color: white;
-	margin-left: -5px;
 }
 .Follow
 {
@@ -97,9 +62,12 @@ footer
 	padding-right: 10px;
 	padding-top: 10px;
 }
+.footp{
+	color: white;
+}
 .copyright
 {
-	color: #0a0a0a;
+	color:white;
 	text-align: center;
 	margin-left: 120px;
 }
@@ -129,4 +97,7 @@ footer
 }
 .fa-instagram {
 	color: white;
+}
+.App{
+	text-align: left;
 }

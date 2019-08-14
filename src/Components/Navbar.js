@@ -24,7 +24,7 @@ class Navbar extends Component {
             <NavDropdown title="Pages" id="basic-nav-dropdown">
               <NavDropdown.Item href="./appt">Appointment</NavDropdown.Item>
               <NavDropdown.Item href="./ourc">our client page</NavDropdown.Item>
-              <NavDropdown.Item href="#">Schedule page</NavDropdown.Item>
+              <NavDropdown.Item href="./sch">Schedule page</NavDropdown.Item>
             </NavDropdown>
           </li>
           <li class="nav-item">

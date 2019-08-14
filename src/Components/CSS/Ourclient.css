@@ -17,5 +17,16 @@
 .backgroundcoloro{
   background-color: #14e8f0;
   margin-top: 200px;
-  /* margin-bottom: 800px; */
+  
+}
+.ourname {
+  padding: 5%;
+  color: rgb(0, 131, 238);
+  font-size: 80px;
+  font-weight: bold;
+  -webkit-text-stroke: 2px white;
+  /* width: 400px; */
+  margin: 0;
+  height: 100px;
+  margin-top: 10px; 
 }

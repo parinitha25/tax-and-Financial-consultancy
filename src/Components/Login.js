@@ -6,8 +6,6 @@ import axios from 'axios';
 import browserHistory from '../Utils/browserHistory';
 import setAuthorizationToken from '../Utils/setAuthorizationToken';
 import api from '../Api/index';
-// import {login} from './Userindex';
-// import {setAuthorizationToken} from '../Utils/Setauthorization';
   
 class Login extends Component {
   constructor(props){
@@ -25,37 +23,32 @@ handleSubmit=async(e)=>{
     const payload = { email,password }
     e.preventDefault();
     let t=0;
-    // let reqobj={
-    //   Email:this.state.email,
-    //   Password:this.state.password,
-    // }
     let reg_pwd=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
     let reg_email=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if(!this.state.email) this.setState({emailError:'Email is required'});
       else if(!reg_email.test(this.state.email)) this.setState({emailError:'Invalid Email'}); 
-      else {
+        else {
           t++;
           this.setState({emailError:''});
-      }
-
-      if(!this.state.password) this.setState({passwordError:'Password is required'});
+        }
+    if(!this.state.password) this.setState({passwordError:'Password is required'});
       else if(!reg_pwd.test(this.state.password)) this.setState({passwordError:'Invalid Password'});
-      else {
-          t++;
-          this.setState({passwordError:''});
-      }
-      if(t>1) {   
-        console.log("hii")
+        else {
+            t++;
+            this.setState({passwordError:''});
+        }
+    if(t>1) {   
+      console.log("hii")
         debugger;
-                await api.login(payload).then(res => {
-                    this.setState({
-                      email: '',
-                      password:'' 
-                    })
-                    console.log('hello')
-                    browserHistory.push("/");
-                });       
-            }
+          await api.login(payload).then(res => {
+            this.setState({
+              email: '',
+              password:'' 
+            })
+            console.log('hello')
+            browserHistory.push("/");
+          });       
+    }
 }
 
 handleSignin=async()=>{
@@ -65,14 +58,8 @@ handleSignin=async()=>{
   const signinRes = await api.login(payload)
   sessionStorage.setItem('authentication', signinRes.data.token)
   sessionStorage.setItem('userEmail', signinRes.data.email)
-  // .then(res => {
-  //     const token = res.data.token;
-  //     localStorage.setItem('jwtToken',token);
-  //     setAuthorizationToken(token);
-  // })
   browserHistory.push("/");
 }
-
 
   render() {
     const { email, password } = this.state

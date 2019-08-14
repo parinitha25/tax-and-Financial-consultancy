@@ -188,7 +188,7 @@ class Home extends Component {
               </div>
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div> 
             </div>
-            {/* <Footer/>    */}
+            <Footer/>   
       </div>
     );
   }
